@@ -7,7 +7,7 @@ Welcome to Theta Tau: House of Hammer and Tongs, an action-packed RPG where you 
 
 # Storyline
 
-# Introduction
+## Introduction
 
 You wake up, eager to attend the Theta Tau trials, dreaming of joining the legendary House of Hammer and Tongs. However, upon arriving late, you find the trial grounds in ruins, with bodies scattered everywhere. Among the injured, the Grandmaster Kewis Lemper, barely clinging to life, tells you that a familiar face was behind the attack, stealing everything Theta Tau stands for.
 
