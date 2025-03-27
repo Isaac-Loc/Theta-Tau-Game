@@ -12,9 +12,32 @@ func player_movement(delta):
 	
 	if Input.is_action_pressed("sprint"):  # Sprinting increases speed
 		current_speed *= SPRINT_MULTIPLIER
+
+	# Handle diagonal movement first
+	if Input.is_action_pressed("ui_right") and Input.is_action_pressed("ui_down"):
+		current_direction = "right_down"
+		play_anim(1)
+		velocity.x = current_speed
+		velocity.y = current_speed
+	elif Input.is_action_pressed("ui_right") and Input.is_action_pressed("ui_up"):
+		current_direction = "right_up"
+		play_anim(1)
+		velocity.x = current_speed
+		velocity.y = -current_speed
+	elif Input.is_action_pressed("ui_left") and Input.is_action_pressed("ui_down"):
+		current_direction = "left_down"
+		play_anim(1)
+		velocity.x = -current_speed
+		velocity.y = current_speed
+	elif Input.is_action_pressed("ui_left") and Input.is_action_pressed("ui_up"):
+		current_direction = "left_up"
+		play_anim(1)
+		velocity.x = -current_speed
+		velocity.y = -current_speed
 	
-	if Input.is_action_pressed("ui_right"):
-		current_direction= "right"
+	# Handle single direction movement
+	elif Input.is_action_pressed("ui_right"):
+		current_direction = "right"
 		play_anim(1)
 		velocity.x = current_speed
 		velocity.y = 0
@@ -39,32 +62,17 @@ func player_movement(delta):
 		velocity.y = 0
 	
 	move_and_slide()
-	
+
 func play_anim(movement):
-	var dir = current_direction
 	var anim = $AnimatedSprite2D
 	
-	if dir == "right":
-		anim.flip_h=false
-		if movement == 1:
-			anim.play("side_walk")
-		elif movement == 0:
-			anim.play("side_idle")
-	if dir == "left":
-		anim.flip_h= true
-		if movement == 1:
-			anim.play("side_walk")
-		elif movement == 0:
-			anim.play("side_idle")
-	if dir == "down":
-		anim.flip_h= true
-		if movement == 1:
-			anim.play("front_walk")
-		elif movement == 0:
-			anim.play("front_idle")
-	if dir == "up":
-		anim.flip_h= true
-		if movement == 1:
-			anim.play("back_walk")
-		elif movement == 0:
-			anim.play("back_idle")
+	if current_direction == "right" or current_direction == "right_down" or current_direction == "right_up":
+		anim.flip_h = false
+		anim.play("side_walk" if movement else "side_idle")
+	elif current_direction == "left" or current_direction == "left_down" or current_direction == "left_up":
+		anim.flip_h = true
+		anim.play("side_walk" if movement else "side_idle")
+	elif current_direction == "down":
+		anim.play("front_walk" if movement else "front_idle")
+	elif current_direction == "up":
+		anim.play("back_walk" if movement else "back_idle")
