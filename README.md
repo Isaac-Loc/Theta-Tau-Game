@@ -59,8 +59,8 @@
 ## Notes from Will  
 
 ### General  
-- **Combat examples:** [HERE](), [ANOTHER]().  
-- **Pixel art scale reference:** [HERE]().  
+- **Combat examples:** [HERE](https://www.youtube.com/watch?v=sGZPMT3M8EU&ab_channel=Challacade), [ANOTHER](https://www.youtube.com/watch?v=6BrZryMz-ac&ab_channel=GameEndeavor).  
+- **Pixel art scale reference:** [HERE](https://www.youtube.com/watch?v=Gwrpw1YtuGo&t=412s&ab_channel=AdamCYounis).  
 - Tune **difficulty** for a **rewarding, but not frustrating** experience.  
 - **Music & Sound Effects** must be included.  
 - **Lore should be voice-acted**.  
