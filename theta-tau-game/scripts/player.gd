@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 const speed = 100
+const balls = 69
 var current_direction = "none"
 
 func _physics_process(delta):
