@@ -1,7 +1,10 @@
-[gd_scene load_steps=55 format=3 uid="uid://bql3hbgucp60q"]
+[gd_scene load_steps=56 format=3 uid="uid://bql3hbgucp60q"]
 
 [ext_resource type="Script" uid="uid://wbo6bbahvv8m" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://dayp8lnsv4e3o" path="res://art/characters/player.png" id="2_qhqgy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
+radius = 6.08276
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dqkch"]
 atlas = ExtResource("2_qhqgy")
@@ -414,10 +417,16 @@ animations = [{
 }]
 
 [node name="player" type="CharacterBody2D"]
+y_sort_enabled = true
 script = ExtResource("1_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 5)
+shape = SubResource("CircleShape2D_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, 2)
 sprite_frames = SubResource("SpriteFrames_apa73")
-animation = &"front_walk"
+animation = &"side_walk"
+frame_progress = 0.277613
+offset = Vector2(0, -15)
