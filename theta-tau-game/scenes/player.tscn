@@ -418,6 +418,8 @@ animations = [{
 
 [node name="player" type="CharacterBody2D"]
 y_sort_enabled = true
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("1_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -427,6 +429,6 @@ shape = SubResource("CircleShape2D_g2els")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, 2)
 sprite_frames = SubResource("SpriteFrames_apa73")
-animation = &"side_walk"
-frame_progress = 0.277613
+animation = &"back_attack"
+frame_progress = 0.675103
 offset = Vector2(0, -15)

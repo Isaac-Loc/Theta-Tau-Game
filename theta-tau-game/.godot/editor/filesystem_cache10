@@ -1,8 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1743302970
+::res://::1743438744
+enemy.gd::GDScript::4320379444137453090::1743438674::0::1::::<>CharacterBody2D<><>0<>0<><>::
 ::res://art/::1743046352
 icon.svg::CompressedTexture2D/CompressedTexture2D::4759012237270578362::1743042717::1743046352::1::::<><><>0<>0<>0707c82bd0aa4cd30a0bbfb403ee0be3<>res://.godot/imported/icon.svg-2ffe2e9772a318535303737ea3c29287.ctex::
-::res://art/characters/::1743046352
+::res://art/characters/::1743307852
 player.png::CompressedTexture2D/CompressedTexture2D::7209777401953451406::1743042717::1743046352::1::::<><><>0<>0<>602aabf16de2409198a78e287c2753d0<>res://.godot/imported/player.png-724888193b7e6f81468b28eab9d7a9e5.ctex::
 README.txt::TextFile/TextFile::-1::1743043109::0::1::::<><><>0<>0<><>::
 skeleton.png::CompressedTexture2D/CompressedTexture2D::8779593691828586918::1743042717::1743046352::1::::<><><>0<>0<>f86680790780d8acc2b2575cb73f1dd2<>res://.godot/imported/skeleton.png-db6116b63ac2248a6354e009ccc972fc.ctex::
@@ -45,9 +46,9 @@ wooden.png::CompressedTexture2D/CompressedTexture2D::1582344388870236773::174304
 walls.png::CompressedTexture2D/CompressedTexture2D::3117604611888253632::1743042717::1743046352::1::::<><><>0<>0<>3002f42deb97fe35b390ecbf751c2aab<>res://.godot/imported/walls.png-eaabf4fd11f51c29a52fa73042567e68.ctex::
 wooden_door.png::CompressedTexture2D/CompressedTexture2D::338444266915791477::1743042717::1743046352::1::::<><><>0<>0<>0d8a6c1b7b3e55dfa01d878caa218462<>res://.godot/imported/wooden_door.png-118f741b3c91f8f639ebc115cbcb5203.ctex::
 wooden_door_b.png::CompressedTexture2D/CompressedTexture2D::8424658976568966883::1743042717::1743046352::1::::<><><>0<>0<>59144d6659746c3fa359a061705d4df2<>res://.godot/imported/wooden_door_b.png-3700c4f26de87331ebb42f7094617866.ctex::
-::res://scenes/::1743285165
-main.tscn::PackedScene/PackedScene::3739873662931062834::1743285165::0::1::::<><><>0<>0<><>::
-player.tscn::PackedScene/PackedScene::3533862976255256054::1743285165::0::1::::<><><>0<>0<><>::uid://wbo6bbahvv8m::::res://scripts/player.gd<>uid://dayp8lnsv4e3o::::res://art/characters/player.png
-world.tscn::PackedScene/PackedScene::4819521485135160664::1743285165::0::1::::<><><>0<>0<><>::uid://dvb5uid8bf3jy::::res://art/tilesets/plains.png<>uid://cemjb5di8331u::::res://art/tilesets/grass.png<>uid://c675ubyhgmgn7::::res://art/objects/objects.png<>uid://bql3hbgucp60q::::res://scenes/player.tscn
-::res://scripts/::1743284444
+::res://scenes/::1743438744
+player.tscn::PackedScene/PackedScene::3533862976255256054::1743351416::0::1::::<><><>0<>0<><>::uid://wbo6bbahvv8m::::res://scripts/player.gd<>uid://dayp8lnsv4e3o::::res://art/characters/player.png
+world.tscn::PackedScene/PackedScene::4819521485135160664::1743305582::0::1::::<><><>0<>0<><>::uid://dvb5uid8bf3jy::::res://art/tilesets/plains.png<>uid://cemjb5di8331u::::res://art/tilesets/grass.png<>uid://c675ubyhgmgn7::::res://art/objects/objects.png<>uid://bql3hbgucp60q::::res://scenes/player.tscn
+::res://scripts/::1743438744
+enemy.tscn::PackedScene::5752556985520955252::1743438639::0::1::::<><><>0<>0<><>::uid://cq0yg4lx2hvli::::res://art/characters/slime.png
 player.gd::GDScript/GDScript::1547124389378914202::1743269873::0::1::::<>CharacterBody2D<><>0<>0<><>::
