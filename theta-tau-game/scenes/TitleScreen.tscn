@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://sg2tnedwl3xp"]
+
+[sub_resource type="GDScript" id="GDScript_888yl"]
+script/source = "extends Button
+
+
+
+func _on_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://scenes/world.tscn\")
+	pass # Replace with function body.
+"
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartGame" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -203.5
+offset_top = -73.5
+offset_right = 203.5
+offset_bottom = 73.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Start Game"
+script = SubResource("GDScript_888yl")
+
+[connection signal="pressed" from="StartGame" to="StartGame" method="_on_pressed"]

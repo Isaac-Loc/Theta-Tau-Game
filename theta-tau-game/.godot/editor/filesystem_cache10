@@ -1,21 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-<<<<<<< Updated upstream
-::res://::1743535520
-enemy.gd::GDScript/GDScript::4320379444137453090::1743535134::0::1::::<>CharacterBody2D<><>0<>0<><>::
-main_menu.tscn::PackedScene::9789626332776592::1743535301::0::1::::<><><>0<>0<><>::
-=======
-::res://::1743536266
-enemy.tscn::PackedScene::5752556985520955252::1743536234::0::1::::<><><>0<>0<><>::uid://b2s3avcq47arq::::res://enemy.gd<>uid://cq0yg4lx2hvli::::res://art/characters/slime.png
->>>>>>> Stashed changes
+::res://::1743538552
 ::res://art/::1743532033
 icon.svg::CompressedTexture2D/CompressedTexture2D::4759012237270578362::1743436343::1743532033::1::::<><><>0<>0<>0707c82bd0aa4cd30a0bbfb403ee0be3<>res://.godot/imported/icon.svg-2ffe2e9772a318535303737ea3c29287.ctex::
 ::res://art/characters/::1743532034
 player.png::CompressedTexture2D/CompressedTexture2D::7209777401953451406::1743436343::1743532034::1::::<><><>0<>0<>602aabf16de2409198a78e287c2753d0<>res://.godot/imported/player.png-724888193b7e6f81468b28eab9d7a9e5.ctex::
-<<<<<<< Updated upstream
 README.txt::TextFile/TextFile::-1::1743436343::0::1::::<><><>0<>0<><>::
-=======
-README.txt::TextFile::-1::1743436343::0::1::::<><><>0<>0<><>::
->>>>>>> Stashed changes
 skeleton.png::CompressedTexture2D/CompressedTexture2D::8779593691828586918::1743436343::1743532034::1::::<><><>0<>0<>f86680790780d8acc2b2575cb73f1dd2<>res://.godot/imported/skeleton.png-db6116b63ac2248a6354e009ccc972fc.ctex::
 skeleton_swordless.png::CompressedTexture2D/CompressedTexture2D::4707257140761532429::1743436343::1743532034::1::::<><><>0<>0<>1dd6dcfba79cfbf345702406ea1c34bd<>res://.godot/imported/skeleton_swordless.png-49c3c9eca6b7a486680f979465915f64.ctex::
 slime.png::CompressedTexture2D/CompressedTexture2D::5948941773287437530::1743436343::1743532033::1::::<><><>0<>0<>7e220cbf5aef91cc00d29d24472660fb<>res://.godot/imported/slime.png-94dab37bc2fdc1a4889fd9eb4d4b53fd.ctex::
@@ -56,21 +45,12 @@ wooden.png::CompressedTexture2D/CompressedTexture2D::1582344388870236773::174343
 walls.png::CompressedTexture2D/CompressedTexture2D::3117604611888253632::1743436343::1743532033::1::::<><><>0<>0<>3002f42deb97fe35b390ecbf751c2aab<>res://.godot/imported/walls.png-eaabf4fd11f51c29a52fa73042567e68.ctex::
 wooden_door.png::CompressedTexture2D/CompressedTexture2D::338444266915791477::1743436343::1743532033::1::::<><><>0<>0<>0d8a6c1b7b3e55dfa01d878caa218462<>res://.godot/imported/wooden_door.png-118f741b3c91f8f639ebc115cbcb5203.ctex::
 wooden_door_b.png::CompressedTexture2D/CompressedTexture2D::8424658976568966883::1743436343::1743532033::1::::<><><>0<>0<>59144d6659746c3fa359a061705d4df2<>res://.godot/imported/wooden_door_b.png-3700c4f26de87331ebb42f7094617866.ctex::
-<<<<<<< Updated upstream
-::res://scenes/::1743535301
-enemy.tscn::PackedScene::6222406260245890339::1743535301::0::1::::<><><>0<>0<><>::uid://bu4uhjy0ep75s::::res://enemy.gd<>uid://cq0yg4lx2hvli::::res://art/characters/slime.png
-main_menu.tscn::PackedScene::7111538154623681563::1743535301::0::1::::<><><>0<>0<><>::
-player.tscn::PackedScene::3533862976255256054::1743535134::0::1::::<><><>0<>0<><>::uid://wbo6bbahvv8m::::res://scripts/player.gd<>uid://dayp8lnsv4e3o::::res://art/characters/player.png
-title_screen.tscn::PackedScene::334507310340521734::1743535301::0::1::::<><><>0<>0<><>::uid://bxdqqih634vg5::::res://TitleScreen.gd
-world.tscn::PackedScene::4819521485135160664::1743535205::0::1::::<><><>0<>0<><>::uid://dvb5uid8bf3jy::::res://art/tilesets/plains.png<>uid://cemjb5di8331u::::res://art/tilesets/grass.png<>uid://c675ubyhgmgn7::::res://art/objects/objects.png
-::res://scripts/::1743535134
-=======
-::res://scenes/::1743536266
-enemy.tscn::PackedScene::4921045189812256194::1743536266::0::1::::<><><>0<>0<><>::uid://b2s3avcq47arq::::res://scripts/enemy.gd<>uid://cq0yg4lx2hvli::::res://art/characters/slime.png
-main_menu.tscn::PackedScene::8080193297699848173::1743536239::0::1::::<><><>0<>0<><>::
-player.tscn::PackedScene::3533862976255256054::1743536239::0::1::::<><><>0<>0<><>::uid://wbo6bbahvv8m::::res://scripts/player.gd<>uid://dayp8lnsv4e3o::::res://art/characters/player.png
-world.tscn::PackedScene::4819521485135160664::1743536208::0::1::::<><><>0<>0<><>::uid://dvb5uid8bf3jy::::res://art/tilesets/plains.png<>uid://cemjb5di8331u::::res://art/tilesets/grass.png<>uid://c675ubyhgmgn7::::res://art/objects/objects.png<>uid://cn7t1jxvivofk::::res://enemy.tscn<>uid://bql3hbgucp60q::::res://scenes/player.tscn
-::res://scripts/::1743536266
-enemy.gd::GDScript::4320379444137453090::1743535134::0::1::::<>CharacterBody2D<><>0<>0<><>::
->>>>>>> Stashed changes
-player.gd::GDScript::1547124389378914202::1743535134::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://scenes/::1743538411
+enemy.tscn::PackedScene::3831954586614333978::1743538411::0::1::::<><><>0<>0<><>::uid://bu4uhjy0ep75s::::res://scripts/enemy.gd<>uid://cq0yg4lx2hvli::::res://art/characters/slime.png
+player.tscn::PackedScene::3533862976255256054::1743538411::0::1::::<><><>0<>0<><>::uid://wbo6bbahvv8m::::res://scripts/player.gd<>uid://dayp8lnsv4e3o::::res://art/characters/player.png
+start_game.gd::GDScript::4443895975430268317::1743538387::0::1::::<>Button<><>0<>0<><>::
+TitleScreen.tscn::PackedScene::2140647792796328408::1743538411::0::1::::<><><>0<>0<><>::uid://b4kwk18hhq8lt::::res://scenes/start_game.gd
+world.tscn::PackedScene/PackedScene::4819521485135160664::1743536899::0::1::::<><><>0<>0<><>::uid://dvb5uid8bf3jy::::res://art/tilesets/plains.png<>uid://cemjb5di8331u::::res://art/tilesets/grass.png<>uid://c675ubyhgmgn7::::res://art/objects/objects.png<>uid://ccd15o778brda::::res://scenes/enemy.tscn<>uid://bql3hbgucp60q::::res://scenes/player.tscn
+::res://scripts/::1743538225
+enemy.gd::GDScript/GDScript::3851291862661461606::1743536899::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.gd::GDScript/GDScript::1547124389378914202::1743535134::0::1::::<>CharacterBody2D<><>0<>0<><>::
