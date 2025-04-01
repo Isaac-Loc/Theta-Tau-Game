@@ -46,7 +46,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 10
 text = "Quit"
-script = ExtResource("1_fgkus")
 
 [connection signal="pressed" from="Start Button" to="Start Button" method="_on_pressed"]
 [connection signal="pressed" from="Quit Button" to="Quit Button" method="_on_Quit_Button_pressed"]
