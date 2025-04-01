@@ -1,9 +1,7 @@
-<<<<<<< Updated upstream
-res://scripts/player.gd
-res://scenes/player.tscn
-=======
-res://main_menu.tscn
 res://scenes/world.tscn
 res://scenes/player.tscn
+res://main_menu.tscn
 res://enemy.tscn
->>>>>>> Stashed changes
+res://scripts/player.gd
+res://scenes/main_menu.tscn
+res://scenes/enemy.tscn
