@@ -1,0 +1,4 @@
+res://scenes/player.tscn
+res://scenes/enemy.tscn
+res://scenes/main_menu.tscn
+res://scenes/button.gd
