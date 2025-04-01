@@ -79,3 +79,4 @@ func play_anim(movement):
 		anim.play("front_walk" if movement else "front_idle")
 	elif current_direction == "up":
 		anim.play("back_walk" if movement else "back_idle")
+		

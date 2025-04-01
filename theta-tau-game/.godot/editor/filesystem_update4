@@ -1,14 +1,8 @@
 res://scenes/world.tscn
 res://scenes/player.tscn
-<<<<<<< Updated upstream
-res://main_menu.tscn
-res://enemy.tscn
-res://scripts/player.gd
-res://scenes/main_menu.tscn
-=======
 res://enemy.tscn
 res://TitleScreen.gd
 res://scenes/TitleScreen.gd
 res://scenes/title_screen.tscn
->>>>>>> Stashed changes
 res://scenes/enemy.tscn
+res://scripts/player.gd
