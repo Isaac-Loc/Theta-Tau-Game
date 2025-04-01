@@ -5,4 +5,7 @@ res://TitleScreen.gd
 res://scenes/TitleScreen.gd
 res://scenes/title_screen.tscn
 res://scenes/enemy.tscn
+<<<<<<< Updated upstream
 res://scripts/player.gd
+=======
+>>>>>>> Stashed changes

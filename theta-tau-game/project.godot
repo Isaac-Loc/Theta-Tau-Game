@@ -12,7 +12,11 @@ config_version=5
 
 config/name="Theta Tau Game"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 run/main_scene="uid://bql3hbgucp60q"
+=======
+run/main_scene="uid://e1bj0h0iyuig"
+>>>>>>> Stashed changes
 =======
 run/main_scene="uid://e1bj0h0iyuig"
 >>>>>>> Stashed changes

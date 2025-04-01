@@ -1,11 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ::res://::1743531919
 main_menu.tscn::PackedScene::-1::1743531919::0::1::::<><><>0<>0<><>::
 ::res://art/::1743531918
 icon.svg::CompressedTexture2D/CompressedTexture2D::4759012237270578362::1743436343::1743532033::1::::<><><>0<>0<>0707c82bd0aa4cd30a0bbfb403ee0be3<>res://.godot/imported/icon.svg-2ffe2e9772a318535303737ea3c29287.ctex::
 ::res://art/characters/::1743531918
 =======
+=======
+>>>>>>> Stashed changes
 ::res://::1743533009
 enemy.gd::GDScript/GDScript::4320379444137453090::1743532149::0::1::::<>CharacterBody2D<><>0<>0<><>::
 enemy.tscn::PackedScene/PackedScene::5752556985520955252::1743532207::0::1::::<><><>0<>0<><>::uid://b2s3avcq47arq::::res://enemy.gd<>uid://cq0yg4lx2hvli::::res://art/characters/slime.png
@@ -13,6 +16,9 @@ TitleScreen.gd::GDScript::4007957697664278918::1743533004::0::1::::<>Button<><>0
 ::res://art/::1743532033
 icon.svg::CompressedTexture2D/CompressedTexture2D::4759012237270578362::1743436343::1743532033::1::::<><><>0<>0<>0707c82bd0aa4cd30a0bbfb403ee0be3<>res://.godot/imported/icon.svg-2ffe2e9772a318535303737ea3c29287.ctex::
 ::res://art/characters/::1743532034
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 player.png::CompressedTexture2D/CompressedTexture2D::7209777401953451406::1743436343::1743532034::1::::<><><>0<>0<>602aabf16de2409198a78e287c2753d0<>res://.godot/imported/player.png-724888193b7e6f81468b28eab9d7a9e5.ctex::
 README.txt::TextFile/TextFile::-1::1743436343::0::1::::<><><>0<>0<><>::
@@ -20,7 +26,11 @@ skeleton.png::CompressedTexture2D/CompressedTexture2D::8779593691828586918::1743
 skeleton_swordless.png::CompressedTexture2D/CompressedTexture2D::4707257140761532429::1743436343::1743532034::1::::<><><>0<>0<>1dd6dcfba79cfbf345702406ea1c34bd<>res://.godot/imported/skeleton_swordless.png-49c3c9eca6b7a486680f979465915f64.ctex::
 slime.png::CompressedTexture2D/CompressedTexture2D::5948941773287437530::1743436343::1743532033::1::::<><><>0<>0<>7e220cbf5aef91cc00d29d24472660fb<>res://.godot/imported/slime.png-94dab37bc2fdc1a4889fd9eb4d4b53fd.ctex::
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ::res://art/objects/::1743531918
+=======
+::res://art/objects/::1743532034
+>>>>>>> Stashed changes
 =======
 ::res://art/objects/::1743532034
 >>>>>>> Stashed changes
@@ -36,9 +46,15 @@ rock_in_water_04.png::CompressedTexture2D/CompressedTexture2D::58303930014491534
 rock_in_water_05.png::CompressedTexture2D/CompressedTexture2D::3239120820991282250::1743436343::1743532034::1::::<><><>0<>0<>01ea655984a02c04422a599713544d87<>res://.godot/imported/rock_in_water_05.png-0f4a66be4db173f40ebf2c5102eff21f.ctex::
 rock_in_water_06.png::CompressedTexture2D/CompressedTexture2D::4582286114793607930::1743436343::1743532034::1::::<><><>0<>0<>94d9f0fea22e790c77396c699ddb3862<>res://.godot/imported/rock_in_water_06.png-41efbccc621c687dd29b66a6d85677ec.ctex::
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ::res://art/particles/::1743531918
 dust_particles_01.png::CompressedTexture2D/CompressedTexture2D::4061484802169812208::1743436343::1743532034::1::::<><><>0<>0<>b009a986029b96a3b65f723e9fef42bc<>res://.godot/imported/dust_particles_01.png-164fb5b070ff7bf9493958dd5dd6af0f.ctex::
 ::res://art/tilesets/::1743531918
+=======
+::res://art/particles/::1743532034
+dust_particles_01.png::CompressedTexture2D/CompressedTexture2D::4061484802169812208::1743436343::1743532034::1::::<><><>0<>0<>b009a986029b96a3b65f723e9fef42bc<>res://.godot/imported/dust_particles_01.png-164fb5b070ff7bf9493958dd5dd6af0f.ctex::
+::res://art/tilesets/::1743532034
+>>>>>>> Stashed changes
 =======
 ::res://art/particles/::1743532034
 dust_particles_01.png::CompressedTexture2D/CompressedTexture2D::4061484802169812208::1743436343::1743532034::1::::<><><>0<>0<>b009a986029b96a3b65f723e9fef42bc<>res://.godot/imported/dust_particles_01.png-164fb5b070ff7bf9493958dd5dd6af0f.ctex::
@@ -59,6 +75,7 @@ water-sheet.png::CompressedTexture2D/CompressedTexture2D::5347252500085016640::1
 water_decorations.png::CompressedTexture2D/CompressedTexture2D::6885219354954799546::1743436343::1743532033::1::::<><><>0<>0<>a26afb51ff97fee5ede0e4446c365cd3<>res://.godot/imported/water_decorations.png-b1cd030aebb6f0bf5b8d91c8b1e11891.ctex::
 water_lillies.png::CompressedTexture2D/CompressedTexture2D::6108262274060180139::1743436343::1743532033::1::::<><><>0<>0<>dadf192e0cb253df84cf6e2afafc0754<>res://.godot/imported/water_lillies.png-fea86470a1fa9886f5d4a9af1031a6e0.ctex::
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ::res://art/tilesets/floors/::1743531918
 carpet.png::CompressedTexture2D/CompressedTexture2D::2610713512889832320::1743436343::1743532033::1::::<><><>0<>0<>30100cf68a5e755d7ae687310a1f5f1b<>res://.godot/imported/carpet.png-2f768dd105f4ec08f1e9cef999965e56.ctex::
 flooring.png::CompressedTexture2D/CompressedTexture2D::8730830102650376325::1743436343::1743532033::1::::<><><>0<>0<>e2894240db476ce7f94ba353f6e1e8e9<>res://.godot/imported/flooring.png-025d0850d5182ca4a683f8562fca9cf9.ctex::
@@ -73,6 +90,8 @@ world.tscn::PackedScene/PackedScene::4819521485135160664::1743531919::0::1::::<>
 ::res://scripts/::1743531919
 player.gd::GDScript::1547124389378914202::1743531919::0::1::::<>CharacterBody2D<><>0<>0<><>::
 =======
+=======
+>>>>>>> Stashed changes
 ::res://art/tilesets/floors/::1743532033
 carpet.png::CompressedTexture2D/CompressedTexture2D::2610713512889832320::1743436343::1743532033::1::::<><><>0<>0<>30100cf68a5e755d7ae687310a1f5f1b<>res://.godot/imported/carpet.png-2f768dd105f4ec08f1e9cef999965e56.ctex::
 flooring.png::CompressedTexture2D/CompressedTexture2D::8730830102650376325::1743436343::1743532033::1::::<><><>0<>0<>e2894240db476ce7f94ba353f6e1e8e9<>res://.godot/imported/flooring.png-025d0850d5182ca4a683f8562fca9cf9.ctex::
@@ -87,4 +106,7 @@ title_screen.tscn::PackedScene::334507310340521734::1743533009::0::1::::<><><>0<
 world.tscn::PackedScene::4819521485135160664::1743533013::0::1::::<><><>0<>0<><>::uid://dvb5uid8bf3jy::::res://art/tilesets/plains.png<>uid://cemjb5di8331u::::res://art/tilesets/grass.png<>uid://c675ubyhgmgn7::::res://art/objects/objects.png<>uid://cn7t1jxvivofk::::res://enemy.tscn<>uid://bql3hbgucp60q::::res://scenes/player.tscn
 ::res://scripts/::1743532149
 player.gd::GDScript/GDScript::1547124389378914202::1743532149::0::1::::<>CharacterBody2D<><>0<>0<><>::
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
