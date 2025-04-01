@@ -1,10 +1,6 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=2 format=3 uid="uid://e0h7f7levfc"]
-=======
 [gd_scene load_steps=3 format=3 uid="uid://dnedurfsk8nar"]
 
 [ext_resource type="Script" uid="uid://3l1qntkvxeht" path="res://scenes/button.gd" id="1_l6cm7"]
->>>>>>> Stashed changes
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
 bg_color = Color(1, 1, 1, 1)
@@ -23,11 +19,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-<<<<<<< Updated upstream
-[node name="Button" type="Button" parent="."]
-=======
 [node name="Start Button" type="Button" parent="."]
->>>>>>> Stashed changes
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -44,8 +36,6 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 52
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 text = "Start Game"
-<<<<<<< Updated upstream
-=======
 script = ExtResource("1_l6cm7")
 
 [node name="Quit Button" type="Button" parent="."]
@@ -69,4 +59,3 @@ script = ExtResource("1_l6cm7")
 
 [connection signal="pressed" from="Start Button" to="Start Button" method="_on_pressed"]
 [connection signal="pressed" from="Quit Button" to="Quit Button" method="_on_pressed"]
->>>>>>> Stashed changes

@@ -11,10 +11,7 @@ config_version=5
 [application]
 
 config/name="Theta Tau Game"
-<<<<<<< Updated upstream
-=======
 run/main_scene="uid://dnedurfsk8nar"
->>>>>>> Stashed changes
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://art/icon.svg"
 <<<<<<<Updatedupstream<<<<<<<Updatedupstreamrun/main_scene="uid://bql3hbgucp60q"
