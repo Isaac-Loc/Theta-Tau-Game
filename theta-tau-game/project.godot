@@ -14,6 +14,8 @@ config/name="Theta Tau Game"
 run/main_scene="uid://cawu2x2yxxq6s"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://art/icon.svg"
+<<<<<<<Updatedupstream<<<<<<<Updatedupstreamrun/main_scene="uid://bql3hbgucp60q"
+<<<<<<<Updatedupstreamrun/main_scene="uid://bql3hbgucp60q"
 
 [display]
 
