@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Theta Tau Game"
-run/main_scene="uid://bql3hbgucp60q"
+run/main_scene="uid://drm0v716ipdob"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://art/icon.svg"
 
