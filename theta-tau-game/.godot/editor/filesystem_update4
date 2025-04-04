@@ -1,13 +1,21 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 res://title_screen.tscn
 res://scripts/start_game.gd
 =======
+>>>>>>> Stashed changes
+=======
+res://pause_menu.tscn
 >>>>>>> Stashed changes
 res://scenes/title_screen.tscn
 res://scenes/world.tscn
 res://scenes/player.tscn
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 res://scenes/enemy.tscn
+=======
+res://pause_menu.gd
+>>>>>>> Stashed changes
 res://scripts/enemy.gd
 res://scripts/player.gd
 =======
