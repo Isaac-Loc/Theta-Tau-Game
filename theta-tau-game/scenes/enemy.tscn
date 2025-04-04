@@ -150,7 +150,6 @@ position = Vector2(-1, -1)
 shape = SubResource("CircleShape2D_ile5s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1)
 shape = SubResource("CircleShape2D_1x4g4")
 
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
