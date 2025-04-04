@@ -1,7 +1,7 @@
-res://scenes/world.tscn
-res://scenes/world.gd
+res://pause_menu.tscn
 res://scenes/title_screen.tscn
 res://scenes/player.tscn
-res://pause_menu.tscn
 res://pause_menu.gd
+res://scripts/enemy.gd
 res://scripts/player.gd
+res://scripts/start_game.gd
