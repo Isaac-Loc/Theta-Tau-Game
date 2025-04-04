@@ -28,85 +28,64 @@ func _physics_process(delta):
 func player_movement(delta):
 	var current_speed = SPEED
 
-	# Don't update animations if attacking
-	if attack_ip:
-		return
-
 	if Input.is_action_pressed("sprint"):
 		current_speed *= SPRINT_MULTIPLIER
 
+	var moving = false
+
 	if Input.is_action_pressed("ui_right") and Input.is_action_pressed("ui_down"):
 		current_direction = "right_down"
-		play_anim(1)
-		velocity.x = current_speed
-		velocity.y = current_speed
+		velocity = Vector2(current_speed, current_speed)
+		moving = true
 	elif Input.is_action_pressed("ui_right") and Input.is_action_pressed("ui_up"):
 		current_direction = "right_up"
-		play_anim(1)
-		velocity.x = current_speed
-		velocity.y = -current_speed
+		velocity = Vector2(current_speed, -current_speed)
+		moving = true
 	elif Input.is_action_pressed("ui_left") and Input.is_action_pressed("ui_down"):
 		current_direction = "left_down"
-		play_anim(1)
-		velocity.x = -current_speed
-		velocity.y = current_speed
+		velocity = Vector2(-current_speed, current_speed)
+		moving = true
 	elif Input.is_action_pressed("ui_left") and Input.is_action_pressed("ui_up"):
 		current_direction = "left_up"
-		play_anim(1)
-		velocity.x = -current_speed
-		velocity.y = -current_speed
+		velocity = Vector2(-current_speed, -current_speed)
+		moving = true
 	elif Input.is_action_pressed("ui_right"):
 		current_direction = "right"
-		play_anim(1)
-		velocity.x = current_speed
-		velocity.y = 0
+		velocity = Vector2(current_speed, 0)
+		moving = true
 	elif Input.is_action_pressed("ui_left"):
 		current_direction = "left"
-		play_anim(1)
-		velocity.x = -current_speed
-		velocity.y = 0
+		velocity = Vector2(-current_speed, 0)
+		moving = true
 	elif Input.is_action_pressed("ui_down"):
 		current_direction = "down"
-		play_anim(1)
-		velocity.y = current_speed
-		velocity.x = 0
+		velocity = Vector2(0, current_speed)
+		moving = true
 	elif Input.is_action_pressed("ui_up"):
 		current_direction = "up"
-		play_anim(1)
-		velocity.y = -current_speed
-		velocity.x = 0
+		velocity = Vector2(0, -current_speed)
+		moving = true
 	else:
-		play_anim(0)
-		velocity.x = 0
-		velocity.y = 0
-	
+		velocity = Vector2.ZERO
+
 	move_and_slide()
+
+	if not attack_ip:
+		play_anim(moving)
 
 func play_anim(movement):
 	var anim = $AnimatedSprite2D
 
 	if current_direction in ["right", "right_down", "right_up"]:
 		anim.flip_h = false
-		if movement:
-			anim.play("side_walk")
-		else:
-			anim.play("side_idle")
+		anim.play("side_walk" if movement else "side_idle")
 	elif current_direction in ["left", "left_down", "left_up"]:
 		anim.flip_h = true
-		if movement:
-			anim.play("side_walk")
-		else:
-			anim.play("side_idle")
+		anim.play("side_walk" if movement else "side_idle")
 	elif current_direction == "down":
-		if movement:
-			anim.play("front_walk")
-		else:
-			anim.play("front_idle")
+		anim.play("front_walk" if movement else "front_idle")
 	elif current_direction == "up":
-		if movement:
-			anim.play("back_walk")
-		else:
-			anim.play("back_idle")
+		anim.play("back_walk" if movement else "back_idle")
 
 func player():
 	pass
@@ -133,6 +112,7 @@ func attack():
 	if Input.is_action_just_pressed("attack") and not attack_ip:
 		global.player_current_attack = true
 		attack_ip = true
+
 		match current_direction:
 			"right", "right_down", "right_up":
 				$AnimatedSprite2D.flip_h = false
@@ -144,22 +124,10 @@ func attack():
 				$AnimatedSprite2D.play("front_attack")
 			"up":
 				$AnimatedSprite2D.play("back_attack")
+
 		$deal_attack_timer.start()
 
 func _on_deal_attack_timer_timeout() -> void:
 	$deal_attack_timer.stop()
 	global.player_current_attack = false
 	attack_ip = false
-
-	# Return to idle animation after attack ends
-	match current_direction:
-		"right", "right_down", "right_up":
-			$AnimatedSprite2D.flip_h = false
-			$AnimatedSprite2D.play("side_idle")
-		"left", "left_down", "left_up":
-			$AnimatedSprite2D.flip_h = true
-			$AnimatedSprite2D.play("side_idle")
-		"down":
-			$AnimatedSprite2D.play("front_idle")
-		"up":
-			$AnimatedSprite2D.play("back_idle")

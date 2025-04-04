@@ -127,13 +127,13 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ile5s"]
-radius = 46.6476
+radius = 102.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1x4g4"]
 radius = 5.09902
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_md0e3"]
-radius = 14.0
+radius = 21.0238
 
 [node name="enemy" type="CharacterBody2D"]
 script = ExtResource("1_4gyqm")
@@ -162,7 +162,11 @@ shape = SubResource("CircleShape2D_1x4g4")
 position = Vector2(0, -3)
 shape = SubResource("CircleShape2D_md0e3")
 
+[node name="take_damage_cooldown" type="Timer" parent="."]
+wait_time = 0.5
+
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]
 [connection signal="body_entered" from="enemy_hitbox" to="." method="_on_enemy_hitbox_body_entered"]
 [connection signal="body_exited" from="enemy_hitbox" to="." method="_on_enemy_hitbox_body_exited"]
+[connection signal="timeout" from="take_damage_cooldown" to="." method="_on_take_damage_cooldown_timeout"]
