@@ -79,6 +79,12 @@ sources/2 = SubResource("TileSetAtlasSource_4mrxx")
 [node name="world" type="Node2D"]
 y_sort_enabled = true
 
+[node name="PauseMenu" parent="." instance=ExtResource("7_4mrxx")]
+offset_left = 105.0
+offset_top = 72.0
+offset_right = 151.0
+offset_bottom = 72.0
+
 [node name="TileMap" type="TileMap" parent="."]
 z_as_relative = false
 y_sort_enabled = true

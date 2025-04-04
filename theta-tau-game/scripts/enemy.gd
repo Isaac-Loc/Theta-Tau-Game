@@ -3,7 +3,7 @@ extends CharacterBody2D
 var speed = 40
 var player_chase = false
 var player = null
-
+@onready var world = $"../"
 
 func _physics_process(delta):
 	if player_chase:
