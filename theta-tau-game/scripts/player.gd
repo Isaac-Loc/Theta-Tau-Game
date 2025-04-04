@@ -3,6 +3,7 @@ extends CharacterBody2D
 const SPEED = 100
 const SPRINT_MULTIPLIER = 1.35 # Adjust sprint speed multiplier
 var current_direction = "none"
+@onready var world = $"../"
 
 func _ready():
 	$AnimatedSprite2D.play("front_idle")
@@ -11,6 +12,8 @@ func _physics_process(delta):
 	player_movement(delta)
 
 func player_movement(delta):
+	if world.paused:
+		return
 	var current_speed = SPEED
 	
 	if Input.is_action_pressed("sprint"):  # Sprinting increases speed
