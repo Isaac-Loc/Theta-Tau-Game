@@ -10,6 +10,7 @@ var attack_ip = false
 const SPEED = 100
 const SPRINT_MULTIPLIER = 1.35
 var current_direction = "none"
+@onready var world = $"../"
 
 func _ready():
 	$AnimatedSprite2D.play("front_idle")
@@ -26,6 +27,8 @@ func _physics_process(delta):
 		self.queue_free()
 
 func player_movement(delta):
+	if world.paused:
+		return
 	var current_speed = SPEED
 
 	if Input.is_action_pressed("sprint"):
