@@ -97,13 +97,16 @@ layer_2/y_sort_enabled = true
 layer_2/tile_data = PackedInt32Array(-65534, 655362, 7, 196614, 655362, 7, 196628, 655362, 7, -65512, 655362, 7, -131063, 2, 5, 65554, 2, 5, 524289, 2, 5, 589829, 524290, 6, -65530, 524290, 6, 65541, 524290, 6, 524311, 524290, 6, 65558, 524290, 6, 589842, 524290, 6, -65516, 393218, 7, 524302, 393218, 7, 589834, 393218, 7, 12, 393218, 7, 131081, 2, 1, 26, 2, 1, 524313, 2, 1, 262162, 2, 1, 589827, 2, 1, -65533, 327682, 0, 131082, 327682, 0, 196632, 327682, 0, 589836, 327682, 0, 131086, 2, 0, 458778, 2, 0, 262144, 2, 0)
 
 [node name="enemy" parent="TileMap" instance=ExtResource("4_71j4m")]
-position = Vector2(234, 95)
+position = Vector2(352, 104)
 
 [node name="player" parent="." instance=ExtResource("4_k0juu")]
-position = Vector2(29, 38)
+position = Vector2(207, 89)
 
 [node name="PauseMenu" parent="." instance=ExtResource("7_4mrxx")]
 offset_left = 105.0
 offset_top = 72.0
 offset_right = 151.0
 offset_bottom = 72.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(133, 176)
