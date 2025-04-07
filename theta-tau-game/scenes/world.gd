@@ -6,7 +6,6 @@ func _ready():
 	pause_menu.hide()
 
 func _process(delta):
-	change_scene()
 	if Input.is_action_just_pressed("pause"):
 		pauseMenu() 
 
@@ -31,8 +30,3 @@ func _on_cliffside_transition_point_body_exited(body: Node2D) -> void:
 	if body.has_method("player"):
 		global.transition_scene = false
 		
-func change_scene():
-	if global.transition_scene == true:
-		if global.current_scene == "world":
-			get_tree().change_scene_to_file("res://scenes/cliffside.tscn")
-			global.finish_changescenes()
