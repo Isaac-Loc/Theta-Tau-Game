@@ -1,10 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://cawu2x2yxxq6s"]
+[gd_scene load_steps=12 format=3 uid="uid://cawu2x2yxxq6s"]
 
 [ext_resource type="Texture2D" uid="uid://dvb5uid8bf3jy" path="res://art/tilesets/plains.png" id="1_4wyf3"]
+[ext_resource type="Script" uid="uid://dcokp20kcivxx" path="res://scenes/world.gd" id="1_i7141"]
 [ext_resource type="Texture2D" uid="uid://cemjb5di8331u" path="res://art/tilesets/grass.png" id="2_k0juu"]
 [ext_resource type="Texture2D" uid="uid://c675ubyhgmgn7" path="res://art/objects/objects.png" id="3_71j4m"]
 [ext_resource type="PackedScene" uid="uid://cn7t1jxvivofk" path="res://scenes/enemy.tscn" id="4_71j4m"]
 [ext_resource type="PackedScene" uid="uid://bql3hbgucp60q" path="res://scenes/player.tscn" id="4_k0juu"]
+[ext_resource type="PackedScene" uid="uid://cskoscbkf827q" path="res://scenes/pause_menu.tscn" id="7_4mrxx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qfnet"]
 texture = ExtResource("1_4wyf3")
@@ -78,6 +80,8 @@ sources/2 = SubResource("TileSetAtlasSource_4mrxx")
 
 [node name="world" type="Node2D"]
 y_sort_enabled = true
+position = Vector2(2, 15)
+script = ExtResource("1_i7141")
 
 [node name="TileMap" type="TileMap" parent="."]
 z_as_relative = false
@@ -94,7 +98,16 @@ layer_2/y_sort_enabled = true
 layer_2/tile_data = PackedInt32Array(-65534, 655362, 7, 196614, 655362, 7, 196628, 655362, 7, -65512, 655362, 7, -131063, 2, 5, 65554, 2, 5, 524289, 2, 5, 589829, 524290, 6, -65530, 524290, 6, 65541, 524290, 6, 524311, 524290, 6, 65558, 524290, 6, 589842, 524290, 6, -65516, 393218, 7, 524302, 393218, 7, 589834, 393218, 7, 12, 393218, 7, 131081, 2, 1, 26, 2, 1, 524313, 2, 1, 262162, 2, 1, 589827, 2, 1, -65533, 327682, 0, 131082, 327682, 0, 196632, 327682, 0, 589836, 327682, 0, 131086, 2, 0, 458778, 2, 0, 262144, 2, 0)
 
 [node name="enemy" parent="TileMap" instance=ExtResource("4_71j4m")]
-position = Vector2(234, 95)
+position = Vector2(352, 104)
 
 [node name="player" parent="." instance=ExtResource("4_k0juu")]
-position = Vector2(29, 38)
+position = Vector2(207, 89)
+
+[node name="PauseMenu" parent="." instance=ExtResource("7_4mrxx")]
+offset_left = 105.0
+offset_top = 72.0
+offset_right = 151.0
+offset_bottom = 72.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(133, 176)

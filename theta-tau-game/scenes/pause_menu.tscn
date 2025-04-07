@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://dqrjfdun80ksb"]
 
-[ext_resource type="Script" path="res://scripts/pause_menu.gd" id="1_hdmo1"]
+[gd_scene load_steps=2 format=3 uid="uid://cskoscbkf827q"]
+
+[ext_resource type="Script" uid="uid://bcwjpeyd8x7bt" path="res://scripts/pause_menu.gd" id="1_hdmo1"]
+
 
 [node name="PauseMenu" type="Control"]
 z_index = 4

@@ -4,20 +4,24 @@ var enemy_inattack_range = false
 var enemy_attack_cooldown = true
 var health = 100
 var player_alive = true
-
 var attack_ip = false
 
 const SPEED = 100
 const SPRINT_MULTIPLIER = 1.35
 var current_direction = "none"
 
+@onready var world = $"../"
+
 func _ready():
 	$AnimatedSprite2D.play("front_idle")
+	$regen_timer.start()  # Start the regen timer if not autostart
+	$regen_timer.timeout.connect(_on_regen_timer_timeout)  # Connect the signal (can also do this in the editor)
 
 func _physics_process(delta):
 	player_movement(delta)
 	enemy_attack()
 	attack()
+	update_health()
 	
 	if health <= 0:
 		player_alive = false
@@ -26,6 +30,8 @@ func _physics_process(delta):
 		self.queue_free()
 
 func player_movement(delta):
+	if world.paused:
+		return
 	var current_speed = SPEED
 
 	if Input.is_action_pressed("sprint"):
@@ -131,3 +137,14 @@ func _on_deal_attack_timer_timeout() -> void:
 	$deal_attack_timer.stop()
 	global.player_current_attack = false
 	attack_ip = false
+
+func update_health():
+	var healthbar = $healthBar
+	healthbar.value = health
+	healthbar.visible = health < 100
+
+func _on_regen_timer_timeout() -> void:
+	if player_alive and health < 100:
+		health += 20
+		health = min(health, 100)
+		update_health()
