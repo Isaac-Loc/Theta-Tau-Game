@@ -148,3 +148,12 @@ func _on_regen_timer_timeout() -> void:
 		health += 20
 		health = min(health, 100)
 		update_health()
+		
+		
+func current_camera():
+	if global.current_scene == "world":
+		$world_camera.enabled = true
+		$cliffside_camera.enabled = false
+	elif global.current_scene == "cliffside":
+		$world_camera.enabled = false
+		$cliffside_camera.enabled = true

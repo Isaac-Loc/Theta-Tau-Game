@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bql3hbgucp60q" path="res://scenes/player.tscn" id="4_k0juu"]
 [ext_resource type="PackedScene" uid="uid://cskoscbkf827q" path="res://scenes/pause_menu.tscn" id="7_4mrxx"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i7141"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qfnet"]
 texture = ExtResource("1_4wyf3")
 2:1/0 = 0
 1:0/0 = 0
@@ -39,11 +39,11 @@ texture = ExtResource("1_4wyf3")
 4:6/0 = 0
 5:6/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4mrxx"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i7141"]
 texture = ExtResource("2_k0juu")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7r4gi"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4mrxx"]
 texture = ExtResource("3_71j4m")
 14:5/0 = 0
 0:0/0 = 0
@@ -74,9 +74,9 @@ texture = ExtResource("3_71j4m")
 
 [sub_resource type="TileSet" id="TileSet_7r4gi"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_i7141")
-sources/1 = SubResource("TileSetAtlasSource_4mrxx")
-sources/2 = SubResource("TileSetAtlasSource_7r4gi")
+sources/0 = SubResource("TileSetAtlasSource_qfnet")
+sources/1 = SubResource("TileSetAtlasSource_i7141")
+sources/2 = SubResource("TileSetAtlasSource_4mrxx")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i7141"]
 size = Vector2(53, 37)
