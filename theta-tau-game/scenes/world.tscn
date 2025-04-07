@@ -1,12 +1,12 @@
 [gd_scene load_steps=12 format=3 uid="uid://cawu2x2yxxq6s"]
 
 [ext_resource type="Texture2D" uid="uid://dvb5uid8bf3jy" path="res://art/tilesets/plains.png" id="1_4wyf3"]
-[ext_resource type="Script" uid="uid://dcokp20kcivxx" path="res://scenes/world.gd" id="1_i7141"]
+[ext_resource type="Script" path="res://scenes/world.gd" id="1_i7141"]
 [ext_resource type="Texture2D" uid="uid://cemjb5di8331u" path="res://art/tilesets/grass.png" id="2_k0juu"]
 [ext_resource type="Texture2D" uid="uid://c675ubyhgmgn7" path="res://art/objects/objects.png" id="3_71j4m"]
 [ext_resource type="PackedScene" uid="uid://cn7t1jxvivofk" path="res://scenes/enemy.tscn" id="4_71j4m"]
 [ext_resource type="PackedScene" uid="uid://bql3hbgucp60q" path="res://scenes/player.tscn" id="4_k0juu"]
-[ext_resource type="PackedScene" uid="uid://cskoscbkf827q" path="res://scenes/pause_menu.tscn" id="7_4mrxx"]
+[ext_resource type="PackedScene" uid="uid://dqrjfdun80ksb" path="res://scenes/pause_menu.tscn" id="7_4mrxx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qfnet"]
 texture = ExtResource("1_4wyf3")
@@ -111,3 +111,15 @@ offset_bottom = 72.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(133, 176)
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="HealthBar" type="TextureProgressBar" parent="HUD"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -473.0
+offset_right = 280.0
+offset_bottom = -333.0
+grow_vertical = 0
+scale = Vector2(0.1, 0.1)
