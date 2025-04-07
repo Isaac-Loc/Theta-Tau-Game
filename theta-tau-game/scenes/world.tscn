@@ -80,6 +80,7 @@ sources/2 = SubResource("TileSetAtlasSource_4mrxx")
 
 [node name="world" type="Node2D"]
 y_sort_enabled = true
+position = Vector2(2, 15)
 script = ExtResource("1_i7141")
 
 [node name="TileMap" type="TileMap" parent="."]
