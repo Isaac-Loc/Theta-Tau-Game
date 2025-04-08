@@ -107,19 +107,3 @@ position = Vector2(-2, -14)
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(3, -7)
 polygon = PackedVector2Array(5, 7, 187, 8, 190, -28, 269, -25, 268, 6, 271, 12, 273, 49, 343, 49, 427, 49, 428, 118, 428, 195, -2, 196, -4, 21, 0, -6, -63, 62, -68, 151, -56, 207, 13, 246, 142, 252, 246, 252, 393, 252, 462, 228, 498, 170, 497, 62, 493, 5, 464, -84, 373, -112, 279, -127, 166, -128, 67, -92, 5, -69, 0, -3)
-
-[node name="PauseMenu" parent="."]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-offset_left = 105.0
-offset_top = 72.0
-offset_right = 151.0
-offset_bottom = 72.0
-script = null
