@@ -13,3 +13,6 @@ res://scripts/enemy.gd
 res://scripts/pause_menu_2.gd
 res://scripts/world.gd
 res://world.gd
+res://scripts/pause_menu.gd
+res://pauseMenu.gdshader
+res://pause_menu.tscn

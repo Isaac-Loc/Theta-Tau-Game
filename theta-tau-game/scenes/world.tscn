@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://cawu2x2yxxq6s"]
+[gd_scene load_steps=11 format=3 uid="uid://cawu2x2yxxq6s"]
 
 [ext_resource type="Texture2D" uid="uid://dvb5uid8bf3jy" path="res://art/tilesets/plains.png" id="1_4wyf3"]
 [ext_resource type="Texture2D" uid="uid://cemjb5di8331u" path="res://art/tilesets/grass.png" id="2_k0juu"]
 [ext_resource type="Texture2D" uid="uid://c675ubyhgmgn7" path="res://art/objects/objects.png" id="3_71j4m"]
 [ext_resource type="PackedScene" uid="uid://cn7t1jxvivofk" path="res://scenes/enemy.tscn" id="4_71j4m"]
 [ext_resource type="PackedScene" uid="uid://bql3hbgucp60q" path="res://scenes/player.tscn" id="4_k0juu"]
+[ext_resource type="PackedScene" uid="uid://dji1deise6p0h" path="res://pause_menu.tscn" id="6_qfnet"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i7141"]
 texture = ExtResource("1_4wyf3")
@@ -107,3 +108,12 @@ position = Vector2(-2, -14)
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(3, -7)
 polygon = PackedVector2Array(5, 7, 187, 8, 190, -28, 269, -25, 268, 6, 271, 12, 273, 49, 343, 49, 427, 49, 428, 118, 428, 195, -2, 196, -4, 21, 0, -6, -63, 62, -68, 151, -56, 207, 13, 246, 142, 252, 246, 252, 393, 252, 462, 228, 498, 170, 497, 62, 493, 5, 464, -84, 373, -112, 279, -127, 166, -128, 67, -92, 5, -69, 0, -3)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("6_qfnet")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
