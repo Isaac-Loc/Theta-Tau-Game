@@ -1,6 +1,10 @@
-res://scripts/player.gd
 res://scenes/title_screen.tscn
 res://scenes/player.tscn
 res://scenes/enemy.tscn
 res://scenes/world.tscn
-res://pause_menu.tscn
+res://scenes/pause_menu.tscn
+res://scenes/world.gd
+res://scripts/global.gd
+res://scripts/player.gd
+res://scripts/enemy.gd
+res://scripts/start_game.gd

@@ -18,3 +18,15 @@ func pauseMenu():
 		Engine.time_scale = 0
 	
 	paused = !paused
+
+
+func _on_cliffside_transition_point_body_entered(body: Node2D) -> void:
+	if body.has_method("player"):
+		global.transition_scene = true
+		
+
+
+func _on_cliffside_transition_point_body_exited(body: Node2D) -> void:
+	if body.has_method("player"):
+		global.transition_scene = false
+		
