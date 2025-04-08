@@ -1,12 +1,15 @@
-[gd_scene load_steps=12 format=3 uid="uid://cawu2x2yxxq6s"]
+[gd_scene load_steps=11 format=3 uid="uid://cawu2x2yxxq6s"]
 
 [ext_resource type="Texture2D" uid="uid://dvb5uid8bf3jy" path="res://art/tilesets/plains.png" id="1_4wyf3"]
-[ext_resource type="Script" uid="uid://dcokp20kcivxx" path="res://scenes/world.gd" id="1_i7141"]
 [ext_resource type="Texture2D" uid="uid://cemjb5di8331u" path="res://art/tilesets/grass.png" id="2_k0juu"]
 [ext_resource type="Texture2D" uid="uid://c675ubyhgmgn7" path="res://art/objects/objects.png" id="3_71j4m"]
 [ext_resource type="PackedScene" uid="uid://cn7t1jxvivofk" path="res://scenes/enemy.tscn" id="4_71j4m"]
 [ext_resource type="PackedScene" uid="uid://bql3hbgucp60q" path="res://scenes/player.tscn" id="4_k0juu"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://cskoscbkf827q" path="res://pause_menu.tscn" id="7_4mrxx"]
+=======
+[ext_resource type="PackedScene" uid="uid://b1robucpeq0ip" path="res://scenes/pause_menu_2.tscn" id="6_qfnet"]
+>>>>>>> Stashed changes
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qfnet"]
 texture = ExtResource("1_4wyf3")
@@ -80,7 +83,11 @@ sources/2 = SubResource("TileSetAtlasSource_4mrxx")
 
 [node name="world" type="Node2D"]
 y_sort_enabled = true
+<<<<<<< Updated upstream
 script = ExtResource("1_i7141")
+=======
+position = Vector2(2, 15)
+>>>>>>> Stashed changes
 
 [node name="TileMap" type="TileMap" parent="."]
 z_as_relative = false
@@ -102,8 +109,24 @@ position = Vector2(234, 95)
 [node name="player" parent="." instance=ExtResource("4_k0juu")]
 position = Vector2(29, 38)
 
+<<<<<<< Updated upstream
 [node name="PauseMenu" parent="." instance=ExtResource("7_4mrxx")]
 offset_left = 105.0
 offset_top = 72.0
 offset_right = 151.0
 offset_bottom = 72.0
+=======
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(133, 176)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu2" parent="CanvasLayer" instance=ExtResource("6_qfnet")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_right = 0.0
+offset_bottom = 0.0
+>>>>>>> Stashed changes

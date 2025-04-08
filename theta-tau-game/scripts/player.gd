@@ -12,8 +12,6 @@ func _physics_process(delta):
 	player_movement(delta)
 
 func player_movement(delta):
-	if world.paused:
-		return
 	var current_speed = SPEED
 	
 	if Input.is_action_pressed("sprint"):  # Sprinting increases speed
