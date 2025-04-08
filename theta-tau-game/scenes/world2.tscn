@@ -1,10 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://61ojd22so4or"]
+[gd_scene load_steps=11 format=3 uid="uid://cjiwv2cd7683r"]
 
-[ext_resource type="Script" uid="uid://b1krto0sfxijx" path="res://scripts/world2.gd" id="1_1te1p"]
+[ext_resource type="Script" path="res://scripts/world2.gd" id="1_1te1p"]
 [ext_resource type="Texture2D" uid="uid://dvb5uid8bf3jy" path="res://art/tilesets/plains.png" id="1_xq77f"]
 [ext_resource type="Texture2D" uid="uid://cemjb5di8331u" path="res://art/tilesets/grass.png" id="2_0yomu"]
 [ext_resource type="Texture2D" uid="uid://c675ubyhgmgn7" path="res://art/objects/objects.png" id="3_7d436"]
-[ext_resource type="PackedScene" uid="uid://c6corp7f2f6xp" path="res://scenes/door.tscn" id="5_0yomu"]
+[ext_resource type="PackedScene" uid="uid://dsmto7q7vtm7r" path="res://scenes/door.tscn" id="5_0yomu"]
 [ext_resource type="PackedScene" uid="uid://bql3hbgucp60q" path="res://scenes/player.tscn" id="6_7d436"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jlm5j"]

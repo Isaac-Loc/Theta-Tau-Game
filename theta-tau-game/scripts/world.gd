@@ -22,16 +22,7 @@ func pauseMenu():
 	paused = !paused
 
 
-func _on_cliffside_transition_point_body_entered(body: Node2D) -> void:
-	if body.has_method("player"):
-		global.transition_scene = true
-		
 
-
-func _on_cliffside_transition_point_body_exited(body: Node2D) -> void:
-	if body.has_method("player"):
-		global.transition_scene = false
-		
 func _on_level_spawn(destination_tag: String):
 	var door_path = "doors/door_" + destination_tag
 	var door = get_node(door_path) as Door

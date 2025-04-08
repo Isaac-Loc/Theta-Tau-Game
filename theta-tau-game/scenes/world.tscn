@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://c675ubyhgmgn7" path="res://art/objects/objects.png" id="3_71j4m"]
 [ext_resource type="PackedScene" uid="uid://cn7t1jxvivofk" path="res://scenes/enemy.tscn" id="4_71j4m"]
 [ext_resource type="PackedScene" uid="uid://bql3hbgucp60q" path="res://scenes/player.tscn" id="4_k0juu"]
-[ext_resource type="PackedScene" uid="uid://cskoscbkf827q" path="res://scenes/pause_menu.tscn" id="7_4mrxx"]
-[ext_resource type="PackedScene" uid="uid://c6corp7f2f6xp" path="res://scenes/door.tscn" id="8_4mrxx"]
+[ext_resource type="PackedScene" uid="uid://djptsm0l8yfpv" path="res://scenes/pause_menu.tscn" id="7_4mrxx"]
+[ext_resource type="PackedScene" uid="uid://dsmto7q7vtm7r" path="res://scenes/door.tscn" id="8_4mrxx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i7141"]
 texture = ExtResource("1_4wyf3")
