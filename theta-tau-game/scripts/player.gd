@@ -30,6 +30,8 @@ func _physics_process(delta):
 		self.queue_free()
 
 func player_movement(delta):
+	if world.paused:
+		return
 	var current_speed = SPEED
 
 	if Input.is_action_pressed("sprint"):
