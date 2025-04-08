@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+class_name Player
+
 var enemy_inattack_range = false
 var enemy_attack_cooldown = true
 var health = 100
@@ -16,7 +18,8 @@ func _ready():
 	$AnimatedSprite2D.play("front_idle")
 	$regen_timer.start()  # Start the regen timer if not autostart
 	$regen_timer.timeout.connect(_on_regen_timer_timeout)  # Connect the signal (can also do this in the editor)
-
+	NavigationManager.on_trigger_player_spawn.connect(_on_spawn)
+	
 func _physics_process(delta):
 	player_movement(delta)
 	enemy_attack()
@@ -30,8 +33,8 @@ func _physics_process(delta):
 		self.queue_free()
 
 func player_movement(delta):
-	if world.paused:
-		return
+	#if world.paused:
+	#	return
 	var current_speed = SPEED
 
 	if Input.is_action_pressed("sprint"):
@@ -148,3 +151,9 @@ func _on_regen_timer_timeout() -> void:
 		health += 20
 		health = min(health, 100)
 		update_health()
+
+func _on_spawn(position: Vector2, direction: String):
+	global_position = position
+	current_direction = direction
+	play_anim(false)
+	

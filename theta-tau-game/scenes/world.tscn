@@ -1,12 +1,13 @@
-[gd_scene load_steps=12 format=3 uid="uid://cawu2x2yxxq6s"]
+[gd_scene load_steps=13 format=3 uid="uid://cawu2x2yxxq6s"]
 
 [ext_resource type="Texture2D" uid="uid://dvb5uid8bf3jy" path="res://art/tilesets/plains.png" id="1_4wyf3"]
-[ext_resource type="Script" uid="uid://dcokp20kcivxx" path="res://scenes/world.gd" id="1_i7141"]
+[ext_resource type="Script" uid="uid://dcokp20kcivxx" path="res://scripts/world.gd" id="1_i7141"]
 [ext_resource type="Texture2D" uid="uid://cemjb5di8331u" path="res://art/tilesets/grass.png" id="2_k0juu"]
 [ext_resource type="Texture2D" uid="uid://c675ubyhgmgn7" path="res://art/objects/objects.png" id="3_71j4m"]
 [ext_resource type="PackedScene" uid="uid://cn7t1jxvivofk" path="res://scenes/enemy.tscn" id="4_71j4m"]
 [ext_resource type="PackedScene" uid="uid://bql3hbgucp60q" path="res://scenes/player.tscn" id="4_k0juu"]
 [ext_resource type="PackedScene" uid="uid://cskoscbkf827q" path="res://scenes/pause_menu.tscn" id="7_4mrxx"]
+[ext_resource type="PackedScene" uid="uid://c6corp7f2f6xp" path="res://scenes/door.tscn" id="8_4mrxx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i7141"]
 texture = ExtResource("1_4wyf3")
@@ -116,3 +117,20 @@ offset_left = 105.0
 offset_top = 72.0
 offset_right = 151.0
 offset_bottom = 72.0
+
+[node name="doors" type="Node" parent="."]
+
+[node name="door_W" parent="doors" instance=ExtResource("8_4mrxx")]
+position = Vector2(2, 28)
+destination_level_tag = "world2"
+destination_door_tag = "E"
+spawn_direction = "right"
+
+[node name="CollisionShape2D" parent="doors/door_W" index="0"]
+position = Vector2(3, -1)
+
+[node name="spawn" parent="doors/door_W" index="1"]
+position = Vector2(24, -1)
+
+[editable path="player"]
+[editable path="doors/door_W"]
