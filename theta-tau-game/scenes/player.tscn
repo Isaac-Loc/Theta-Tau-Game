@@ -451,6 +451,7 @@ wait_time = 0.5
 [node name="world_camera" type="Camera2D" parent="."]
 limit_left = 0
 limit_top = -5
+<<<<<<< Updated upstream
 limit_right = 607
 limit_bottom = 367
 
@@ -462,6 +463,10 @@ offset_right = 113.0
 offset_bottom = 32.0
 scale = Vector2(0.1, 0.1)
 show_percentage = false
+=======
+limit_right = 892
+limit_bottom = 420
+>>>>>>> Stashed changes
 
 [node name="regen_timer" type="Timer" parent="."]
 wait_time = 5.0
