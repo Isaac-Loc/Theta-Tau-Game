@@ -17,9 +17,6 @@ var current_direction = "none"
 @onready var healthbar = $CanvasLayer/Healthbar
 
 
-
-
-
 func _ready():
 	healthbar.init_health(health)
 	$AnimatedSprite2D.play("front_idle")
@@ -161,5 +158,6 @@ func _on_regen_timer_timeout() -> void:
 func _on_spawn(position: Vector2, direction: String):
 	global_position = position
 	current_direction = direction
+	health = global.curHealth
 	play_anim(false)
 	

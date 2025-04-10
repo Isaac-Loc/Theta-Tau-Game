@@ -1,6 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://djptsm0l8yfpv"]
+[gd_scene load_steps=2 format=3 uid="uid://cwyhit0egnsed"]
 
-[ext_resource type="Script" uid="uid://bcwjpeyd8x7bt" path="res://scripts/pause_menu.gd" id="1_hdmo1"]
+[sub_resource type="GDScript" id="GDScript_uahpa"]
+script/source = "extends Control
+
+@onready var world = $\"../\"
+
+func _on_resume_pressed() -> void:
+	world.pauseMenu()
+	
+	pass # Replace with function body.
+
+
+func _on_quit_pressed() -> void:
+	get_tree().quit()
+	pass # Replace with function body.
+"
 
 [node name="PauseMenu" type="Control"]
 z_index = 4
@@ -10,7 +24,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_hdmo1")
+script = SubResource("GDScript_uahpa")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0

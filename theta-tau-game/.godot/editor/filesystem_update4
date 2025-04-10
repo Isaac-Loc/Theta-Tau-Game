@@ -12,3 +12,7 @@ res://scripts/world.gd
 res://scripts/player.gd
 res://scenes/enemyhealthbar.tscn
 res://scripts/enemy.gd
+res://scripts/PlayerData.gd
+res://scripts/door.gd
+res://scripts/navigation_manager.gd
+res://scripts/global.gd
