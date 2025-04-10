@@ -1,10 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1744208756
-pauseMenu.gdshader::Shader/Shader::-1::1744208494::0::1::::<><><>0<>0<><>::
-pause_menu.tscn::PackedScene/PackedScene::-1::1744208506::0::1::::<><><>0<>0<><>::
-::res://art/::1744208756
+::res://::1744258548
+pauseMenu.gdshader::Shader::-1::1744258548::0::1::::<><><>0<>0<><>::
+pause_menu.tscn::PackedScene::-1::1744258548::0::1::::<><><>0<>0<><>::
+::res://art/::1744258548
 icon.svg::CompressedTexture2D/CompressedTexture2D::4759012237270578362::1744208220::1744208506::1::::<><><>0<>0<>0707c82bd0aa4cd30a0bbfb403ee0be3<>res://.godot/imported/icon.svg-2ffe2e9772a318535303737ea3c29287.ctex::
-Zombie Apocalypse Tileset Reference.png::CompressedTexture2D::2183814687822827612::1744208730::1744208756::1::::<><><>0<>0<>ecd628bc9e83b28490194cc1c69fe23a<>res://.godot/imported/Zombie Apocalypse Tileset Reference.png-f752983e17434693d952ae748126664f.ctex::
+Zombie Apocalypse Tileset Reference.png::CompressedTexture2D::2183814687822827612::1744256028::1744258575::1::::<><><>0<>0<>ecd628bc9e83b28490194cc1c69fe23a<>res://.godot/imported/Zombie Apocalypse Tileset Reference.png-f752983e17434693d952ae748126664f.ctex::
 ::res://art/characters/::1744208506
 player.png::CompressedTexture2D/CompressedTexture2D::7209777401953451406::1744208220::1744208506::1::::<><><>0<>0<>602aabf16de2409198a78e287c2753d0<>res://.godot/imported/player.png-724888193b7e6f81468b28eab9d7a9e5.ctex::
 README.txt::TextFile/TextFile::-1::1744208220::0::1::::<><><>0<>0<><>::
@@ -25,7 +25,7 @@ rock_in_water_05.png::CompressedTexture2D/CompressedTexture2D::32391208209912822
 rock_in_water_06.png::CompressedTexture2D/CompressedTexture2D::4582286114793607930::1744208220::1744208506::1::::<><><>0<>0<>94d9f0fea22e790c77396c699ddb3862<>res://.godot/imported/rock_in_water_06.png-41efbccc621c687dd29b66a6d85677ec.ctex::
 ::res://art/particles/::1744208756
 dust_particles_01.png::CompressedTexture2D/CompressedTexture2D::4061484802169812208::1744208220::1744208506::1::::<><><>0<>0<>b009a986029b96a3b65f723e9fef42bc<>res://.godot/imported/dust_particles_01.png-164fb5b070ff7bf9493958dd5dd6af0f.ctex::
-::res://art/tilesets/::1744208506
+::res://art/tilesets/::1744256033
 decor_8x8.png::CompressedTexture2D/CompressedTexture2D::5463599286368207080::1744208220::1744208506::1::::<><><>0<>0<>16ee3fa71236749d3f268e8556ab710c<>res://.godot/imported/decor_8x8.png-2c67d9f8c97327b69fa5f1a56ea57ab4.ctex::
 decor_16x16.png::CompressedTexture2D/CompressedTexture2D::8627987270060786105::1744208220::1744208506::1::::<><><>0<>0<>8ccfc64b9854347ba0258bc683d2821e<>res://.godot/imported/decor_16x16.png-4db024ff31a1b652d9684450c3c32a5c.ctex::
 fences.png::CompressedTexture2D/CompressedTexture2D::5210226562747305737::1744208220::1744208506::1::::<><><>0<>0<>f28d043d90faf5b9fbe2a25a7f35b239<>res://.godot/imported/fences.png-4f3750c238eb1926d25c0d40e93af8cd.ctex::
@@ -48,16 +48,16 @@ wooden.png::CompressedTexture2D/CompressedTexture2D::1582344388870236773::174420
 walls.png::CompressedTexture2D/CompressedTexture2D::3117604611888253632::1744208220::1744208506::1::::<><><>0<>0<>3002f42deb97fe35b390ecbf751c2aab<>res://.godot/imported/walls.png-eaabf4fd11f51c29a52fa73042567e68.ctex::
 wooden_door.png::CompressedTexture2D/CompressedTexture2D::338444266915791477::1744208220::1744208506::1::::<><><>0<>0<>0d8a6c1b7b3e55dfa01d878caa218462<>res://.godot/imported/wooden_door.png-118f741b3c91f8f639ebc115cbcb5203.ctex::
 wooden_door_b.png::CompressedTexture2D/CompressedTexture2D::8424658976568966883::1744208220::1744208506::1::::<><><>0<>0<>59144d6659746c3fa359a061705d4df2<>res://.godot/imported/wooden_door_b.png-3700c4f26de87331ebb42f7094617866.ctex::
-::res://scenes/::1744208494
-enemy.tscn::PackedScene/PackedScene::5752556985520955252::1744208493::0::1::::<><><>0<>0<><>::uid://b2s3avcq47arq::::res://scripts/enemy.gd<>uid://cq0yg4lx2hvli::::res://art/characters/slime.png
-player.tscn::PackedScene/PackedScene::3533862976255256054::1744208494::0::1::::<><><>0<>0<><>::uid://wbo6bbahvv8m::::res://scripts/player.gd<>uid://dayp8lnsv4e3o::::res://art/characters/player.png
-title_screen.tscn::PackedScene/PackedScene::8378802074797637185::1744208494::0::1::::<><><>0<>0<><>::uid://bpkvalddnlv5e::::res://scripts/start_game.gd
-world.tscn::PackedScene/PackedScene::4819521485135160664::1744208494::0::1::::<><><>0<>0<><>::uid://dvb5uid8bf3jy::::res://art/tilesets/plains.png<>uid://cemjb5di8331u::::res://art/tilesets/grass.png<>uid://c675ubyhgmgn7::::res://art/objects/objects.png<>uid://cn7t1jxvivofk::::res://scenes/enemy.tscn<>uid://bql3hbgucp60q::::res://scenes/player.tscn<>uid://coeprc7873iid::::res://art/Zombie Apocalypse Tileset Reference.png
-::res://scripts/::1744208494
-enemy.gd::GDScript/GDScript::4320379444137453090::1744208220::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://scenes/::1744258549
+enemy.tscn::PackedScene::5752556985520955252::1744258548::0::1::::<><><>0<>0<><>::uid://b2s3avcq47arq::::res://scripts/enemy.gd<>uid://cq0yg4lx2hvli::::res://art/characters/slime.png<>uid://50rjym8bsddi::::res://scenes/enemyhealthbar.tscn
+player.tscn::PackedScene::3533862976255256054::1744258549::0::1::::<><><>0<>0<><>::uid://wbo6bbahvv8m::::res://scripts/player.gd<>uid://dayp8lnsv4e3o::::res://art/characters/player.png<>uid://bv07kt3e4if0r::::res://scenes/healthbar.tscn
+title_screen.tscn::PackedScene::8378802074797637185::1744258379::0::1::::<><><>0<>0<><>::uid://bpkvalddnlv5e::::res://scripts/start_game.gd
+world.tscn::PackedScene::4819521485135160664::1744258549::0::1::::<><><>0<>0<><>::uid://dcokp20kcivxx::::res://scripts/world.gd<>uid://cn7t1jxvivofk::::res://scenes/enemy.tscn<>uid://bql3hbgucp60q::::res://scenes/player.tscn<>uid://bbcukprfua3m7::::res://art/Zombie Apocalypse Tileset Reference.png<>uid://dsmto7q7vtm7r::::res://scenes/door.tscn
+::res://scripts/::1744258548
+enemy.gd::GDScript/GDScript::4320379444137453090::1744258548::0::1::::<>CharacterBody2D<><>0<>0<><>::
 global.gd::GDScript/GDScript::46426299057651925::1744208220::0::1::::<>Node<><>0<>0<><>::
-pause_menu.gd::GDScript/GDScript::-1::1744208494::0::1::::<>Control<><>0<>0<><>::
-player.gd::GDScript/GDScript::1547124389378914202::1744208494::0::1::::<>CharacterBody2D<><>0<>0<><>::
-quit.gd::GDScript/GDScript::-1::1744208494::0::1::::<>Button<><>0<>0<><>::
+pause_menu.gd::GDScript::-1::1744258548::0::1::::<>Control<><>0<>0<><>::
+player.gd::GDScript/GDScript::1547124389378914202::1744258548::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+quit.gd::GDScript/GDScript::5229270394263216253::1744208494::0::1::::<>Button<><>0<>0<><>::
 start_game.gd::GDScript/GDScript::3461172755197681436::1744208220::0::1::::<>Button<><>0<>0<><>::
-world.gd::GDScript/GDScript::-1::1744208494::0::1::::<>RefCounted<><>0<>0<><>::
+world.gd::GDScript/GDScript::7329176440956373593::1744258548::0::1::::<>Node2D<><>0<>0<><>::

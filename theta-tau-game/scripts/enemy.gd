@@ -8,10 +8,16 @@ var health = 100
 var player_inattack_zone = false
 var can_take_damage = true
 
+@onready var healthbar = $Healthbar
+
 # Knockback settings
 var knockback_vector = Vector2.ZERO
 var knockback_strength = 150.0
 var knockback_damping = 8.0
+
+func _ready():
+	healthbar.init_health(health)
+
 
 func _physics_process(delta):
 	deal_with_damage()
@@ -54,6 +60,7 @@ func deal_with_damage():
 	if player_inattack_zone and global.player_current_attack:
 		if can_take_damage:
 			health -= 20
+			update_health()
 			$take_damage_cooldown.start()
 			can_take_damage = false
 
@@ -68,3 +75,7 @@ func deal_with_damage():
 
 func _on_take_damage_cooldown_timeout() -> void:
 	can_take_damage = true
+
+func update_health():
+	healthbar.value = health
+	healthbar.visible = health <= 100
