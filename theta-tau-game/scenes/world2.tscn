@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dvb5uid8bf3jy" path="res://art/tilesets/plains.png" id="1_xq77f"]
 [ext_resource type="Texture2D" uid="uid://cemjb5di8331u" path="res://art/tilesets/grass.png" id="2_0yomu"]
 [ext_resource type="Texture2D" uid="uid://c675ubyhgmgn7" path="res://art/objects/objects.png" id="3_7d436"]
-[ext_resource type="PackedScene" path="res://scenes/door.tscn" id="5_0yomu"]
+[ext_resource type="PackedScene" uid="uid://chwdh4bnsq4wq" path="res://scenes/door.tscn" id="5_0yomu"]
 [ext_resource type="PackedScene" uid="uid://bql3hbgucp60q" path="res://scenes/player.tscn" id="6_7d436"]
 [ext_resource type="PackedScene" uid="uid://cn7t1jxvivofk" path="res://scenes/enemy.tscn" id="7_1te1p"]
 
