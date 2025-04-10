@@ -1,7 +1,8 @@
-[gd_scene load_steps=58 format=3 uid="uid://bql3hbgucp60q"]
+[gd_scene load_steps=61 format=3 uid="uid://bql3hbgucp60q"]
 
 [ext_resource type="Script" uid="uid://wbo6bbahvv8m" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://dayp8lnsv4e3o" path="res://art/characters/player.png" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://ca0tgrjk66amw" path="res://art/characters/main-bat-attack.png" id="3_dqkch"]
 [ext_resource type="PackedScene" uid="uid://bv07kt3e4if0r" path="res://scenes/healthbar.tscn" id="3_qhqgy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
@@ -148,20 +149,28 @@ atlas = ExtResource("2_qhqgy")
 region = Rect2(240, 144, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j2b1d"]
-atlas = ExtResource("2_qhqgy")
-region = Rect2(0, 336, 48, 48)
+atlas = ExtResource("3_dqkch")
+region = Rect2(1, 5, 78, 58)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cs1tg"]
-atlas = ExtResource("2_qhqgy")
-region = Rect2(48, 336, 48, 48)
+atlas = ExtResource("3_dqkch")
+region = Rect2(79, 5, 78, 58)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2dvfe"]
-atlas = ExtResource("2_qhqgy")
-region = Rect2(96, 336, 48, 48)
+atlas = ExtResource("3_dqkch")
+region = Rect2(157, 5, 78, 58)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_giy8y"]
-atlas = ExtResource("2_qhqgy")
-region = Rect2(144, 336, 48, 48)
+atlas = ExtResource("3_dqkch")
+region = Rect2(235, 5, 78, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_apa73"]
+atlas = ExtResource("3_dqkch")
+region = Rect2(313, 5, 78, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_74r1k"]
+atlas = ExtResource("3_dqkch")
+region = Rect2(391, 5, 78, 58)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fdfoy"]
 atlas = ExtResource("2_qhqgy")
@@ -365,10 +374,16 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_giy8y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_apa73")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_74r1k")
 }],
 "loop": true,
 "name": &"side_attack",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -433,8 +448,9 @@ shape = SubResource("CircleShape2D_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, 2)
+scale = Vector2(0.7, 0.7)
 sprite_frames = SubResource("SpriteFrames_apa73")
-animation = &"back_attack"
+animation = &"side_attack"
 offset = Vector2(0, -15)
 
 [node name="player_hitbox" type="Area2D" parent="."]
@@ -452,9 +468,9 @@ wait_time = 0.5
 [node name="world_camera" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)
 limit_left = 0
-limit_top = 0
-limit_right = 428
-limit_bottom = 176
+limit_top = -5
+limit_right = 950
+limit_bottom = 450
 
 [node name="regen_timer" type="Timer" parent="."]
 wait_time = 5.0
