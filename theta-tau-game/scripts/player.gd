@@ -14,7 +14,14 @@ var current_direction = "none"
 
 @onready var world = $"../"
 
+@onready var healthbar = $CanvasLayer/Healthbar
+
+
+
+
+
 func _ready():
+	healthbar.init_health(health)
 	$AnimatedSprite2D.play("front_idle")
 	$regen_timer.start()  # Start the regen timer if not autostart
 	$regen_timer.timeout.connect(_on_regen_timer_timeout)  # Connect the signal (can also do this in the editor)
@@ -142,9 +149,8 @@ func _on_deal_attack_timer_timeout() -> void:
 	attack_ip = false
 
 func update_health():
-	var healthbar = $healthBar
 	healthbar.value = health
-	healthbar.visible = health < 100
+	healthbar.visible = health <= 100
 
 func _on_regen_timer_timeout() -> void:
 	if player_alive and health < 100:

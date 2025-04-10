@@ -1,7 +1,8 @@
-[gd_scene load_steps=22 format=3 uid="uid://cn7t1jxvivofk"]
+[gd_scene load_steps=23 format=3 uid="uid://cn7t1jxvivofk"]
 
 [ext_resource type="Script" uid="uid://b2s3avcq47arq" path="res://scripts/enemy.gd" id="1_4gyqm"]
 [ext_resource type="Texture2D" uid="uid://cq0yg4lx2hvli" path="res://art/characters/slime.png" id="2_qi2p4"]
+[ext_resource type="PackedScene" uid="uid://50rjym8bsddi" path="res://scenes/enemyhealthbar.tscn" id="3_4ra3w"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_md0e3"]
 atlas = ExtResource("2_qi2p4")
@@ -164,6 +165,12 @@ shape = SubResource("CircleShape2D_md0e3")
 
 [node name="take_damage_cooldown" type="Timer" parent="."]
 wait_time = 0.5
+
+[node name="Healthbar" parent="." instance=ExtResource("3_4ra3w")]
+offset_left = -8.0
+offset_top = -17.0
+offset_right = 9.0
+offset_bottom = -15.0
 
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]
