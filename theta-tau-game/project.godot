@@ -23,6 +23,7 @@ NavigationManager="*res://scripts/navigation_manager.gd"
 [display]
 
 window/stretch/mode="canvas_items"
+window/stretch/scale=0.5
 
 [input]
 
