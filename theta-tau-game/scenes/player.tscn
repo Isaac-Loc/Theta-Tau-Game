@@ -450,9 +450,9 @@ wait_time = 0.5
 
 [node name="world_camera" type="Camera2D" parent="."]
 limit_left = 0
-limit_top = 0
-limit_right = 428
-limit_bottom = 176
+limit_top = -5
+limit_right = 607
+limit_bottom = 367
 
 [node name="healthBar" type="ProgressBar" parent="."]
 modulate = Color(0.00392157, 0.976471, 0, 1)
