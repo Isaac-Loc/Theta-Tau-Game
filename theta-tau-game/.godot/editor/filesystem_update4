@@ -12,3 +12,6 @@ res://scenes/healthbar.tscn
 res://scenes/pause_menu.tscn
 res://scenes/world2.tscn
 res://scenes/title_screen.tscn
+res://pausemenu.gdshader
+res://scripts/healthbar.gd
+res://pauseMenu.gdshader
