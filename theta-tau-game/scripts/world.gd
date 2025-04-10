@@ -1,7 +1,5 @@
 extends Node2D
 
-
-
 func _ready():
 	if NavigationManager.spawn_door_tag != null:
 		_on_level_spawn(NavigationManager.spawn_door_tag)
