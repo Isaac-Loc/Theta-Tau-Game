@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btub4a0aqubme"
-valid=false
+uid="uid://c7hrvxmhx3ser"
+path="res://.godot/imported/buildings_roofs.png-2342294edc958d9f50cf0e2660ec6d85.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://art/terrain_props_1.png"
+source_file="res://buildings_roofs.png"
+dest_files=["res://.godot/imported/buildings_roofs.png-2342294edc958d9f50cf0e2660ec6d85.ctex"]
 
 [params]
 

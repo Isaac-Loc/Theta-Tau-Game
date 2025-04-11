@@ -6,4 +6,3 @@ res://scenes/world2.tscn
 res://scenes/door.tscn
 res://scenes/healthbar.tscn
 res://scenes/enemyhealthbar.tscn
-res://scripts/player.gd

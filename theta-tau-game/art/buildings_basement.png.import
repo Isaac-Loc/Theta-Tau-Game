@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da6yh6evun3sc"
-valid=false
+uid="uid://c6y3xn71ggb04"
+path="res://.godot/imported/buildings_basement.png-3b70c43c1acbbae0599fcfb0abf7e1f6.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://art/buildings_basement.png"
+dest_files=["res://.godot/imported/buildings_basement.png-3b70c43c1acbbae0599fcfb0abf7e1f6.ctex"]
 
 [params]
 

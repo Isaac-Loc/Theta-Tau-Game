@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djxdbgfsed5w7"
-valid=false
+uid="uid://w3dew36k1k6i"
+path="res://.godot/imported/terrain_props_2.png-56bd21252c3e1154d6c8c1416372655a.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://art/terrain_props_2.png"
+dest_files=["res://.godot/imported/terrain_props_2.png-56bd21252c3e1154d6c8c1416372655a.ctex"]
 
 [params]
 

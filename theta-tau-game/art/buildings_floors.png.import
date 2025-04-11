@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d36ta4k251pk8"
-valid=false
+uid="uid://bd70ns7duhq70"
+path="res://.godot/imported/buildings_floors.png-a6666417b74ae48975cc9f192cffc8a6.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://art/buildings_floors.png"
+dest_files=["res://.godot/imported/buildings_floors.png-a6666417b74ae48975cc9f192cffc8a6.ctex"]
 
 [params]
 
