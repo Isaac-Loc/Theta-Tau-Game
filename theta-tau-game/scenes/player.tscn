@@ -469,10 +469,6 @@ wait_time = 0.5
 [node name="world_camera" type="Camera2D" parent="."]
 position = Vector2(-10, -7)
 zoom = Vector2(4, 4)
-limit_left = 0
-limit_top = -5
-limit_right = 950
-limit_bottom = 450
 
 [node name="regen_timer" type="Timer" parent="."]
 wait_time = 5.0
