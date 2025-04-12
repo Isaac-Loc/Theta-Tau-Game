@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bgp3cqqiyqq0"]
 
 [ext_resource type="Texture2D" uid="uid://dun2r1t3ayhoi" path="res://art/tilesets/i1.png" id="1_u7sor"]
-[ext_resource type="Script" path="res://scripts/margin_container.gd" id="2_vqy6s"]
+[ext_resource type="Script" uid="uid://p4cstfq6r64j" path="res://scripts/margin_container.gd" id="2_vqy6s"]
 
 [sub_resource type="GDScript" id="GDScript_h7odg"]
 script/source = "extends Control

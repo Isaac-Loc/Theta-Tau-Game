@@ -1,6 +1,6 @@
 [gd_scene load_steps=36 format=3 uid="uid://bk56cf2ksiago"]
 
-[ext_resource type="Script" path="res://scripts/spawn_enemy.gd" id="1_uw0c1"]
+[ext_resource type="Script" uid="uid://cve40xx0keoj3" path="res://scripts/spawn_enemy.gd" id="1_uw0c1"]
 [ext_resource type="Texture2D" uid="uid://olcx3yy5iy8g" path="res://art/characters/Goon_4_attack.png" id="2_8nbnr"]
 [ext_resource type="Texture2D" uid="uid://byndf4q2b26tc" path="res://art/characters/Goon_4_death.png" id="2_8nfhs"]
 [ext_resource type="PackedScene" uid="uid://50rjym8bsddi" path="res://scenes/enemyhealthbar.tscn" id="2_uw0c1"]

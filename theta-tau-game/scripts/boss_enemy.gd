@@ -49,6 +49,9 @@ func _on_detection_area_body_entered(body):
 		player_chase = true
 		healthbar.visible = true
 		$CanvasLayer/MarginContainer/Label.visible = true
+		global.boss_enter = true
+		global.switch_to_boss_music()
+
 
 func _on_detection_area_body_exited(body):
 	if body == player:
@@ -84,6 +87,7 @@ func deal_with_damage():
 
 			print("boss health = ", health)
 			if health <= 0:
+				global.stop_music()
 				queue_free()
 
 func _on_take_damage_cooldown_timeout() -> void:
