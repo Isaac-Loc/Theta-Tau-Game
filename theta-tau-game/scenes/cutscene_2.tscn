@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbnu0iqy3i0au"]
+
+[ext_resource type="Script" uid="uid://bahftfnpevw15" path="res://scripts/tempcutscene.gd" id="1_8s6ve"]
+[ext_resource type="Texture2D" uid="uid://djrj3alrogx7v" path="res://art/tilesets/i2.png" id="2_8s6ve"]
+[ext_resource type="Script" path="res://scripts/textbox2code.gd" id="3_5k51e"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_8s6ve")
+
+[node name="Cutscene2Edited" type="Sprite2D" parent="."]
+position = Vector2(839, 528)
+scale = Vector2(1.0931, 1.03345)
+texture = ExtResource("2_8s6ve")
+
+[node name="textbox" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="textbox"]
+offset_left = 58.0
+offset_top = 728.0
+offset_right = 1615.0
+offset_bottom = 1011.0
+script = ExtResource("3_5k51e")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="textbox/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="textbox/MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 41
+text = "Without him THETA TAU wouldn't be the greatest Co-Ed Professional 
+Engineering Fraternity known to man."
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=3 uid="uid://lacge3ong3uu"]
+
+[ext_resource type="Texture2D" uid="uid://dun2r1t3ayhoi" path="res://art/tilesets/i1.png" id="1_u7sor"]
+[ext_resource type="Script" uid="uid://p4cstfq6r64j" path="res://scripts/margin_container.gd" id="2_vqy6s"]
+
+[sub_resource type="GDScript" id="GDScript_h7odg"]
+script/source = "extends Control
+
+
+@onready var timer=$Timer
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+func _input(event):
+	if event.is_action_pressed(\"ui_accept\"):
+		print(\"Timer started!\")
+		timer.start()  
+
+
+
+func _on_timer_timeout() -> void:
+	get_tree().change_scene_to_file(\"res://scenes/cutscene_2.tscn\")
+"
+
+[node name="Cutscene1" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = SubResource("GDScript_h7odg")
+
+[node name="Cutscene1Edited" type="Sprite2D" parent="."]
+position = Vector2(833, 518.5)
+scale = Vector2(1.08854, 1.02246)
+texture = ExtResource("1_u7sor")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Cutscene1Edited"]
+
+[node name="MarginContainer" type="MarginContainer" parent="Cutscene1Edited/CanvasLayer"]
+offset_left = 46.0
+offset_top = 692.0
+offset_right = 1451.0
+offset_bottom = 1008.0
+script = ExtResource("2_vqy6s")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Cutscene1Edited/CanvasLayer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Cutscene1Edited/CanvasLayer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 41
+text = "text"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

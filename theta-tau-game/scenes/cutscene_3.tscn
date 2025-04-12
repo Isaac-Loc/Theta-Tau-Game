@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://7h068rse5nsn"]
+
+[ext_resource type="Script" uid="uid://b00he5ir6h6wb" path="res://scripts/cutscene_3.gd" id="1_k14ko"]
+[ext_resource type="Texture2D" uid="uid://c57hxpglrlb4c" path="res://art/tilesets/i3.png" id="2_k14ko"]
+[ext_resource type="Script" uid="uid://d1bm6mckfya1h" path="res://scenes/margin_container3.gd" id="3_k14ko"]
+
+[node name="Cutscene3" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_k14ko")
+
+[node name="Cutscene3Edited" type="Sprite2D" parent="."]
+position = Vector2(828, 527)
+scale = Vector2(1.08008, 1.02637)
+texture = ExtResource("2_k14ko")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 670.0
+offset_right = 1528.0
+offset_bottom = 1025.0
+script = ExtResource("3_k14ko")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 41
+text = "text"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
