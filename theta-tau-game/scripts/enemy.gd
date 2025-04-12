@@ -26,15 +26,20 @@ func _physics_process(delta):
 		velocity = knockback_vector
 		knockback_vector = knockback_vector.move_toward(Vector2.ZERO, knockback_damping)
 	else:
-		if player_chase and player:
+		if global.goon_current_attack:
+			if $AnimatedSprite2D.animation != "attack":
+				$AnimatedSprite2D.play("attack")
+				
+		elif player_chase and player:
 			var direction = (player.position - position).normalized()
 			velocity = direction * speed
-			$AnimatedSprite2D.play("run")
+			if $AnimatedSprite2D.animation != "run":
+				$AnimatedSprite2D.play("run")
 			$AnimatedSprite2D.flip_h = player.position.x < position.x
 		else:
 			velocity = Vector2.ZERO
-			$AnimatedSprite2D.play("idle")
-	
+			if $AnimatedSprite2D.animation != "idle":
+				$AnimatedSprite2D.play("idle")
 	move_and_slide()
 
 func _on_detection_area_body_entered(body):
@@ -51,10 +56,12 @@ func enemy():
 func _on_enemy_hitbox_body_entered(body: Node2D) -> void:
 	if body.has_method("player"):
 		player_inattack_zone = true
+		global.goon_current_attack = true
 
 func _on_enemy_hitbox_body_exited(body: Node2D) -> void:
 	if body.has_method("player"):
 		player_inattack_zone = false
+		global.goon_current_attack = false
 
 func deal_with_damage():
 	if player_inattack_zone and global.player_current_attack:

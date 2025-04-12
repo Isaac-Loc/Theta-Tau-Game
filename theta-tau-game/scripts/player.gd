@@ -37,7 +37,7 @@ func _physics_process(delta):
 		player_alive = false
 		health = 0
 		print("player has been killed")
-		self.queue_free()
+		get_tree().reload_current_scene()
 
 func player_movement(delta):
 	#if world.paused:

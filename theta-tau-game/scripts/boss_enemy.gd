@@ -26,7 +26,7 @@ func _physics_process(delta):
 		knockback_vector = knockback_vector.move_toward(Vector2.ZERO, knockback_damping)
 	else:
 		if global.boss_current_attack:
-			velocity = Vector2.ZERO
+			
 			if $AnimatedSprite2D.animation != "attack1":
 				$AnimatedSprite2D.play("attack1")
 				

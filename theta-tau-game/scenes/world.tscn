@@ -4742,80 +4742,66 @@ shape = SubResource("CapsuleShape2D_w7kh3")
 position = Vector2(2909, 312)
 
 [node name="enemy" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(1398, 413)
 
 [node name="enemy2" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(1430, 322)
 
 [node name="enemy3" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(1539, 427)
 
 [node name="enemy4" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(1596, 371)
 
 [node name="enemy5" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(1650, 460)
 
 [node name="enemy6" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(1682, 392)
 
 [node name="enemy7" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(1758, 482)
 
 [node name="enemy8" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(1764, 428)
 
 [node name="enemy9" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(1826, 378)
 
 [node name="enemy10" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(1891, 465)
 
 [node name="enemy11" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(1901, 342)
 
 [node name="enemy12" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(2010, 291)
 
 [node name="enemy13" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(2011, 437)
 
 [node name="enemy14" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(2117, 287)
 
 [node name="enemy15" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(2164, 454)
 
 [node name="enemy16" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(2252, 300)
 
 [node name="enemy17" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(2307, 446)
 
 [node name="enemy18" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(2406, 258)
 
 [node name="enemy19" parent="." instance=ExtResource("4_71j4m")]
-visible = false
 position = Vector2(2462, 415)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D2"]
+polygon = PackedVector2Array(-2, -43, -4, 240, 369, 237, 367, 189, 387, 205, 407, 200, 429, 208, 432, 198, 449, 205, 463, 213, 488, 204, 499, 194, 498, 237, 826, 232, 905, 231, 905, 243, 976, 243, 973, 236, 910, 236, 902, 219, 905, 218, 908, 64, 1144, 62, 1143, 236, 1077, 238, 1081, 247, 1148, 248, 1171, 260, 1180, 275, 1241, 277, 1252, 272, 1277, 277, 1324, 274, 1329, 257, 1351, 261, 1358, 275, 1386, 276, 1404, 284, 1404, 303, 1435, 309, 1450, 302, 1486, 314, 1505, 312, 1523, 336, 1557, 342, 1581, 341, 1598, 349, 1604, 365, 1620, 362, 1647, 364, 1667, 375, 1697, 390, 1716, 388, 1769, 402, 1789, 371, 1794, 358, 1831, 336, 1844, 323, 1885, 314, 1888, 289, 1906, 292, 1922, 277, 1949, 272, 1973, 258, 2033, 259, 2074, 260, 2093, 243, 2108, 257, 2131, 260, 2164, 257, 2203, 258, 2243, 257, 2266, 246, 2295, 243, 2322, 243, 2337, 239, 2336, 229, 2272, 229, 2270, 217, 2308, 197, 2379, 194, 2385, 180, 2422, 180, 2439, 210, 2465, 240, 2499, 272, 2529, 270, 2572, 207, 2553, 157, 2560, 135, 2606, 131, 2635, 121, 2642, 90, 2706, 75, 2780, 76, 2828, 83, 2891, 86, 2961, 98, 3023, 101, 3046, 83, 3105, 89, 3140, 110, 3185, 173, 3236, 237, 3288, 260, 3320, 262, 3349, 258, 3402, 266, 3396, 365, 3325, 355, 3235, 337, 3229, 348, 3225, 425, 3215, 468, 3179, 485, 3156, 498, 3119, 496, 3066, 507, 3031, 495, 2985, 522, 2976, 534, 2944, 544, 2938, 507, 2845, 511, 2815, 498, 2797, 518, 2769, 535, 2753, 494, 2737, 525, 2694, 528, 2652, 477, 2619, 432, 2623, 389, 2601, 354, 2555, 356, 2543, 385, 2516, 419, 2513, 453, 2498, 486, 2462, 498, 2423, 500, 2388, 518, 2366, 497, 2350, 513, 2318, 511, 2311, 498, 2284, 498, 2243, 491, 2207, 484, 2176, 480, 2121, 490, 2096, 500, 2052, 468, 2013, 473, 1971, 448, 1923, 447, 1916, 475, 1886, 485, 1863, 466, 1839, 479, 1836, 497, 1790, 498, 1758, 508, 1742, 507, 1733, 479, 1717, 451, 1688, 447, 1679, 465, 1636, 476, 1596, 478, 1578, 451, 1509, 448, 1500, 415, 1477, 418, 1479, 458, 1457, 478, 1440, 462, 1422, 435, 1402, 433, 1394, 446, 1377, 449, 1372, 434, 1300, 432, 1280, 415, 1262, 400, 1230, 381, 1222, 350, 1202, 368, 1189, 389, 1170, 389, 1176, 416, 1144, 419, 1016, 418, 1007, 409, 753, 408, 593, 411, 584, 417, 537, 417, 519, 425, 499, 416, 468, 420, 425, 420, 395, 415, 369, 415, 332, 408, 22, 409, 7, 407, -4, 394, -1, 250, -22, -107, -449, -239, -878, 8, -821, 862, 2, 1041, 2069, 1050, 2997, 1025, 3705, 683, 3648, -82, 3136, -375, 1744, -538, 230, -676, -340, -465, -55, -188, -10, -119, -9, -56)
 
 [editable path="player"]
 [editable path="BossEnemy"]
