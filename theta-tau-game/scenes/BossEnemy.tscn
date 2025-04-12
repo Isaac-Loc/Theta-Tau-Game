@@ -206,7 +206,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3ip1r"]
-radius = 198.0
+radius = 313.014
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4t2um"]
 size = Vector2(15, 20)
@@ -227,7 +227,7 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area"]
-position = Vector2(-1, -1)
+position = Vector2(-3, 2)
 shape = SubResource("CircleShape2D_3ip1r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -250,12 +250,29 @@ visible = false
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -543.0
-offset_top = 19.0
-offset_right = 552.0
-offset_bottom = 74.0
+offset_left = -545.0
+offset_top = 92.0
+offset_right = 550.0
+offset_bottom = 147.0
 grow_horizontal = 2
 value = 50.0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -205.5
+offset_right = 205.5
+offset_bottom = 84.0
+grow_horizontal = 2
+
+[node name="boss title" type="Label" parent="CanvasLayer/MarginContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.780392, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "HOODED MAN"
 
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]

@@ -19,6 +19,6 @@ corner_radius_bottom_left = 10
 [node name="BossHealthBar" type="ProgressBar"]
 theme_override_styles/background = SubResource("StyleBoxFlat_gjmja")
 theme_override_styles/fill = SubResource("StyleBoxFlat_ssrd0")
-max_value = 500.0
+max_value = 220.0
 show_percentage = false
 script = ExtResource("1_gjmja")
