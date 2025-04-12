@@ -17,7 +17,7 @@ var current_direction = "none"
 
 @onready var healthbar = $CanvasLayer/Healthbar
 
-@onready var boss = $"res://scenes/BossEnemy.tscn"
+
 
 
 func _ready():
@@ -109,13 +109,13 @@ func player():
 func _on_player_hitbox_body_entered(body: Node2D) -> void:
 	if body.has_method("enemy"):
 		enemy_inattack_range = true
-	if body.has_method("BossEnemy"):
+	if body.has_method("boss_enemy"):
 		boss_inattack_range = true
 
 func _on_player_hitbox_body_exited(body: Node2D) -> void:
 	if body.has_method("enemy"):
 		enemy_inattack_range = false
-	if body.has_method("BossEnemy"):
+	if body.has_method("boss_enemy"):
 		boss_inattack_range = false
 
 func enemy_attack():
@@ -125,9 +125,10 @@ func enemy_attack():
 		$attack_cooldown.start()
 		print(health)
 	if boss_inattack_range and enemy_attack_cooldown:
-		health -= 15
+		health -= 20
 		enemy_attack_cooldown = false
 		$attack_cooldown.start()
+		
 
 func _on_attack_cooldown_timeout() -> void:
 	enemy_attack_cooldown = true
