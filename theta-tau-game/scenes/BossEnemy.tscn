@@ -255,6 +255,7 @@ offset_top = 92.0
 offset_right = 550.0
 offset_bottom = 147.0
 grow_horizontal = 2
+max_value = 500.0
 value = 50.0
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]

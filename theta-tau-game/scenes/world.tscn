@@ -4742,60 +4742,79 @@ shape = SubResource("CapsuleShape2D_w7kh3")
 position = Vector2(2909, 312)
 
 [node name="enemy" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(1398, 413)
 
 [node name="enemy2" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(1430, 322)
 
 [node name="enemy3" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(1539, 427)
 
 [node name="enemy4" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(1596, 371)
 
 [node name="enemy5" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(1650, 460)
 
 [node name="enemy6" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(1682, 392)
 
 [node name="enemy7" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(1758, 482)
 
 [node name="enemy8" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(1764, 428)
 
 [node name="enemy9" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(1826, 378)
 
 [node name="enemy10" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(1891, 465)
 
 [node name="enemy11" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(1901, 342)
 
 [node name="enemy12" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(2010, 291)
 
 [node name="enemy13" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(2011, 437)
 
 [node name="enemy14" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(2117, 287)
 
 [node name="enemy15" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(2164, 454)
 
 [node name="enemy16" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(2252, 300)
 
 [node name="enemy17" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(2307, 446)
 
 [node name="enemy18" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(2406, 258)
 
 [node name="enemy19" parent="." instance=ExtResource("4_71j4m")]
+visible = false
 position = Vector2(2462, 415)
 
 [editable path="player"]
