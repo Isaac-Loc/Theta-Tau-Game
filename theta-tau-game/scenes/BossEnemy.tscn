@@ -266,7 +266,7 @@ offset_right = 205.5
 offset_bottom = 84.0
 grow_horizontal = 2
 
-[node name="boss title" type="Label" parent="CanvasLayer/MarginContainer"]
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer"]
 visible = false
 layout_mode = 2
 size_flags_horizontal = 4

@@ -215,12 +215,13 @@ radius = 5.09902
 radius = 21.0238
 
 [node name="spawn_enemy" type="CharacterBody2D"]
-visible = false
 script = ExtResource("1_uw0c1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(4, 1)
 sprite_frames = SubResource("SpriteFrames_2u14j")
-animation = &"attack"
+animation = &"death"
+frame_progress = 0.499503
 offset = Vector2(0, -6)
 
 [node name="detection_area" type="Area2D" parent="."]
@@ -241,17 +242,17 @@ disabled = true
 [node name="enemy_hitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="enemy_hitbox"]
-position = Vector2(0, -3)
+position = Vector2(0, -2)
 shape = SubResource("CircleShape2D_r6flv")
 
 [node name="take_damage_cooldown" type="Timer" parent="."]
 wait_time = 0.5
 
 [node name="Healthbar" parent="." instance=ExtResource("2_uw0c1")]
-offset_left = -8.0
-offset_top = -17.0
-offset_right = 9.0
-offset_bottom = -15.0
+offset_left = -15.0
+offset_top = -26.0
+offset_right = 18.0
+offset_bottom = -20.0
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5
