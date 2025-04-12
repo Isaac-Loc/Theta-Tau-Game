@@ -7,6 +7,7 @@ var enemy_attack_cooldown = true
 var health = 100
 var player_alive = true
 var attack_ip = false
+var boss_inattack_range = false
 
 const SPEED = 100
 const SPRINT_MULTIPLIER = 1.35
@@ -15,6 +16,8 @@ var current_direction = "none"
 @onready var world = $"../"
 
 @onready var healthbar = $CanvasLayer/Healthbar
+
+@onready var boss = $"res://scenes/BossEnemy.tscn"
 
 
 func _ready():
@@ -106,17 +109,25 @@ func player():
 func _on_player_hitbox_body_entered(body: Node2D) -> void:
 	if body.has_method("enemy"):
 		enemy_inattack_range = true
+	if body.has_method("BossEnemy"):
+		boss_inattack_range = true
 
 func _on_player_hitbox_body_exited(body: Node2D) -> void:
 	if body.has_method("enemy"):
 		enemy_inattack_range = false
+	if body.has_method("BossEnemy"):
+		boss_inattack_range = false
 
 func enemy_attack():
 	if enemy_inattack_range and enemy_attack_cooldown:
-		health -= 20
+		health -= 5
 		enemy_attack_cooldown = false
 		$attack_cooldown.start()
 		print(health)
+	if boss_inattack_range and enemy_attack_cooldown:
+		health -= 15
+		enemy_attack_cooldown = false
+		$attack_cooldown.start()
 
 func _on_attack_cooldown_timeout() -> void:
 	enemy_attack_cooldown = true
@@ -151,7 +162,7 @@ func update_health():
 
 func _on_regen_timer_timeout() -> void:
 	if player_alive and health < 100:
-		health += 20
+		health += 5
 		health = min(health, 100)
 		update_health()
 

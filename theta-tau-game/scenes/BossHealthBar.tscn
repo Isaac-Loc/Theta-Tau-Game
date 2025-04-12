@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfcqvmiyo3508"]
+
+[ext_resource type="Script" uid="uid://r62d1g7x2rck" path="res://scripts/healthbar.gd" id="1_gjmja"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gjmja"]
+bg_color = Color(0.176471, 0.176471, 0.176471, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ssrd0"]
+bg_color = Color(0.654902, 0.141176, 0.027451, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="BossHealthBar" type="ProgressBar"]
+theme_override_styles/background = SubResource("StyleBoxFlat_gjmja")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ssrd0")
+max_value = 500.0
+show_percentage = false
+script = ExtResource("1_gjmja")

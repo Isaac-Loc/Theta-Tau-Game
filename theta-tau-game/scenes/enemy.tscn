@@ -123,7 +123,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_s1ycm")
 }],
 "loop": true,
-"name": &"walk",
+"name": &"run",
 "speed": 5.0
 }]
 
@@ -134,15 +134,14 @@ radius = 102.0
 radius = 5.09902
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_md0e3"]
-radius = 21.0238
+radius = 14.0
 
 [node name="enemy" type="CharacterBody2D"]
 script = ExtResource("1_4gyqm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_shcg2")
-animation = &"idle"
-frame_progress = 0.0712857
+animation = &"run"
 offset = Vector2(0, -6)
 
 [node name="detection_area" type="Area2D" parent="."]

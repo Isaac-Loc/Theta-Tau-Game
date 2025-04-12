@@ -1,18 +1,19 @@
 extends CharacterBody2D
 
-var speed = 20  # Lower = slower movement
+var speed = 30  # Lower = slower movement
 var player_chase = false
 var player = null
 
-var health = 100
+var health = 500
 var player_inattack_zone = false
 var can_take_damage = true
+var in_player_range = false
 
-@onready var healthbar = $Healthbar
+@onready var healthbar = $CanvasLayer/BossHealthBar
 
 # Knockback settings
 var knockback_vector = Vector2.ZERO
-var knockback_strength = 150.0
+var knockback_strength = 100.0
 var knockback_damping = 8.0
 
 func _ready():
@@ -40,10 +41,12 @@ func _physics_process(delta):
 func _on_detection_area_body_entered(body):
 	player = body
 	player_chase = true
+	$CanvasLayer/BossHealthBar.visible = true
 
 func _on_detection_area_body_exited(body):
 	player = null
 	player_chase = false
+	$CanvasLayer/BossHealthBar.visible = false
 
 func enemy():
 	pass
@@ -78,4 +81,4 @@ func _on_take_damage_cooldown_timeout() -> void:
 
 func update_health():
 	healthbar.value = health
-	healthbar.visible = health <= 100
+	healthbar.visible = health <= 500
