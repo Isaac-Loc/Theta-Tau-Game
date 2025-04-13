@@ -163,7 +163,7 @@ func update_health():
 
 func _on_regen_timer_timeout() -> void:
 	if player_alive and health < 100:
-		health += 5
+		health += 10
 		health = min(health, 100)
 		update_health()
 

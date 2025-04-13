@@ -12,3 +12,6 @@ res://scenes/world.tscn
 res://scenes/BossHealthBar.tscn
 res://scenes/KewisLemper.tscn
 res://scripts/global.gd
+res://scripts/start_game.gd
+res://scripts/player.gd
+res://scenes/enemyHealthBar.tscn
